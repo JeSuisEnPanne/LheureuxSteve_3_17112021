@@ -3,9 +3,7 @@
       <head>
          <meta charset="utf-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="css/style.css"/>
-         <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/Tablet.css" /> 
-         <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/Smartphone.css" /> 
+         <link rel="stylesheet" media="screen and (max-width: 768px)"  href="css/style.css"/>
          <title>Projet Ohmyfood</title>
          <script src="https://kit.fontawesome.com/c36b47a0bc.js" crossorigin="anonymous"></script>
       </head>
@@ -18,7 +16,7 @@
          <header>
 
             <div class="header__logo">
-               <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+               <img class="header__logo__image" src="images/logo/ohmyfood.png" alt="logo Ohmyfood" />
             </div>
         
         </header>
@@ -37,14 +35,16 @@
 
 
             <div class="main__presentation">
+
                
-                  <div class="main__presentation::reserver">
-                        <h1>Réservez le menu qui vous convient</h1>
-                        <h2>Découvrez des restaurants d'exception, séléctionnés pas nos soins.</h2>
+                  <div class="main__presentation__reserver">
+                     <h1>Réservez le menu qui vous convient</h1>
+                     <h2>Découvrez des restaurants d'exception, séléctionnés pas nos soins.</h2>
+
+
                   </div>
 
-
-                  <div class="main__presentation::bouttonexplorer ">
+                  <div class="main__presentation__bouttonexplorer ">
                      <p>Explorer nos restaurants</p>
                   </div>
             </div>
@@ -55,25 +55,25 @@
 
             <div class="main__fonctionnement">
 
-                  <div class="main__fonctionnement::titre">
-                     <h1>Fonctionnement</h1>
+                  <div>
+                     <h1 class="main__fonctionnement__titre">Fonctionnement</h1>
                   </div>
          
-                  <div class="main__fonctionnement::choississez">
+                  <div class="main__fonctionnement__un">
                      <i class="fas fa-circle">1</i>
                      <i class="fas fa-mobile-alt"></i>
                      <p>Choisissez un restaurant</p>
 
                   </div>
 
-                  <div class="main__fonctionnement::composez ">
+                  <div class="main__fonctionnement__un">
                      <i class="fas fa-circle">2</i>
                      <i class="fas fa-tasks"></i>
                      <p>Composez votre menu</p>
 
                   </div>
 
-                  <div class="main__fonctionnement::degustez ">
+                  <div class="main__fonctionnement__un">
                      <i class="fas fa-circle">3</i>
                      <i class="fas fa-store"></i>
                      <p>Dégustez au restaurant</p>
@@ -91,43 +91,46 @@
                      <h1>Restaurants</h1>
                   </div>
          
-                  <div class="main__restaurants::plats ">
+                  <div class="main__restaurants__plats">
                      <div>
                         <p>Nouveau</p>
                      </div>
 
-                     <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
 
                      <div class="restaurants__block">
                         <h2>La palette du goût</h2>
                         <p>Ménilmontant</p>
-
-                           <div>
-                                <i class="far fa-heart"></i>
-                           </div>
                      </div>
+
+                     <div>
+                        <i class="far fa-heart"></i>
+                   </div>
 
                   </div>
 
-                  <div class="main__restaurants::plats ">
+                  <div class="main__restaurants__plats ">
                      <div>
                         <p>Nouveau</p>
                      </div>
                      
                      <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
                      
-                     <div class="restaurants__block"></div>
+                     <div class="restaurants__block">
+                        
                         <h2>La note enchantée</h2>
                         <p>Charonne</p>
 
-                        <div>
+                     </div>
+
+                        <div class="lala">
                               <i class="far fa-heart"></i>
                         </div>
                      </div>
                   
                   </div>
 
-                  <div class="main__restaurants::plats">
+                  <div class="main__restaurants__plats">
                      <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" />
 
                      <div class="restaurants__block">
@@ -167,23 +170,23 @@
          <footer>
 
                <div class="footer__logo">
-                  <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+                  <img src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" />
 
                </div>
 
                <div class="footer__textes">
                   
-                  <div class="footer__textes::proposer">
+                  <div class="footer__textes__proposer">
                      <i class="fas fa-utensils"></i>
                      <p>Proposer un restaurant</p>
                   </div>
 
-                  <div class="footer__textes::devenir">
+                  <div class="footer__textes__devenir">
                      <i class="fas fa-hands-helping"></i>
                      <p>Devenir partenaire</p>
                   </div>
 
-                  <div class="footer__textes::contact">
+                  <div class="footer__textes__contact">
                      <p>Mentions légales</p>
                      <p>Conatct</p>
                   </div>

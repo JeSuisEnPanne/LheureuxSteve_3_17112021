@@ -1,0 +1,155 @@
+.main__presentation
+{
+
+    text-align: center;
+    
+
+    &__reserver {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+
+    }
+
+    &__bouttonexplorer {
+        display: flex;
+        background-color: #dc6eda;
+        border-radius: 25px;
+        width: 50%;
+        color: white;
+        font-weight: bold;
+        font-size: 0.8em;
+        justify-content: center;
+        margin-left: 25%;
+                       
+    }
+
+    
+}
+
+
+
+.main__fonctionnement
+{
+    display: flex;
+    flex-direction: column;
+    
+
+    &__titre{
+        font-size: 1.2em;
+
+    }
+
+    &__un {
+
+    display: flex;
+    flex-direction: row;
+
+    }
+
+
+}
+
+
+
+.fa-circle:before {
+    display: flex;
+    content: "\f111";
+    color: #6600e2;
+    width: 30px;
+
+}
+
+
+
+.fa-mobile-alt:before {
+    display: flex;
+    content: "\f3cd";
+}
+
+
+
+
+/*Restautant*/
+
+
+
+img {
+    width: 50%;
+    max-height: 125px;
+    border-radius: 7% 7% 0% 0%;
+    height: 10%;
+    align-content: center;
+    justify-content: center;
+    object-fit: cover;
+    
+  
+}
+
+
+
+.main__restaurants__plats{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurants__block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    background-color: yellowgreen;
+    border-radius: 0% 0% 7% 7%;
+}
+
+h2{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.lala{
+    display: flex;
+    flex-direction: column;
+}
+/**FIN*/
+
+
+
+/*Bas de page*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    color: white;
+
+        &__logo{
+        display: flex;
+        width: 50%;
+        }
+
+        &__textes{
+            display: flex;
+            
+            
+        }
+
+        &__proposer{
+            display: flex;
+            color: white;
+            background-color: yellow;
+            font-size: 3em;
+        }
+        &__devenir{
+            display: flex;
+            color: white;
+        }
+        &__contact{
+            display: flex;
+            color: white;
+        }
+}
+/*FIN*/

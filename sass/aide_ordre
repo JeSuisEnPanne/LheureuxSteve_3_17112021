@@ -1,0 +1,20 @@
+D’une manière générale, pour éviter les erreurs, faites en sorte d’importer vos fichiers dans l’ordre suivant :
+
+Utils :
+
+Variables.
+Fonctions.
+Mixins.
+Placeholders.
+
+Feuilles de style de tiers (vendors) (si vous en avez).
+
+Base.
+
+Composants.
+
+Layout.
+
+Pages.
+
+Thèmes.
