@@ -3,9 +3,7 @@
       <head>
          <meta charset="utf-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="css/style.css"/>
-         <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/Tablet.css" /> 
-         <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/Smartphone.css" /> 
+         <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style.css"/>
          <title>Projet Ohmyfood - Le délice des sens</title>
          <script src="https://kit.fontawesome.com/c36b47a0bc.js" crossorigin="anonymous"></script>
       </head>
@@ -16,12 +14,14 @@
             <!--Hauit de page-->
          <header>
 
-            <div class="header__logo">
-               <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" />
-            </div>
+            <div class="header__logo__menu">
+                <div class="header__fleche">
+                         <i class="fas fa-arrow-left"></i>
+                </div>
 
-            <div class="header__fleche">
-                <i class="fas fa-arrow-left"></i>
+                <div>
+                     <img id="header__logo__image" src="images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+                </div>
             </div>
         
         </header>
@@ -33,25 +33,32 @@
             <!-- images et titre-->
 
                 <div>
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo menu À la française" />
+                    <img class="main__images" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo menu À la française" />
                 </div>
 
-                <div class="main__titremenu">
-                    <h1>À la française"</h1>
-                    <i class="far fa-heart"></i>
-                </div>
+                
 
+                    <div class="main__titre__menu">
+                        <h1 class="main__titre__texte">À la française</h1>
+                        <i class="far fa-heart"></i>
+                    </div>
+
+                  
+                
             <!--FIN-->
 
             <!--Menu Entrées-->
 
                 <div class="main__menu">
 
-                    <div class="main__menu::titre">
-                        <h2>ENTRÉES</h2>
+                    <div class="main__menu__all">
+                        <h2 class="main__menu__titre">ENTR</h2><h2>ÉES</h2>
                     </div>
 
-                    <div class="main__menu::choix1">
+
+
+
+                    <div class="main__menu__choix1">
                         <div>
                             <p>Tartare de poulpe acidulé</p>
                             <p>Aux zestes d'orange</p>
@@ -63,7 +70,11 @@
 
                     </div>
 
-                    <div class="main__menu::choix2">
+
+
+                    
+
+                    <div class="main__menu__choix2">
                         <div>
                             <p>Velouté de légumes d'antan</p>
                             <p>Carotte, panais, topinambour</p>
@@ -75,7 +86,7 @@
 
                     </div>
 
-                    <div class="main__menu::choix3">
+                    <div class="main__menu__choix3">
                         <div>
                             <p>Soupe à l'oignon</p>
                             <p>Revisitée</p>
@@ -202,38 +213,39 @@
 
          </main>
 
-            <!--Bas de page-->
+                     <!--Pied de page-->
 
          <footer>
 
-               <div class="footer__logo">
-                  <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+            <div>
+               <img id="header__logo__image" src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" />
 
+            </div>
+
+            <div class="footer__textes">
+               
+               <div class="footer__textes__proposer">
+                  <i class="fas fa-utensils"></i>
+                  <p>Proposer un restaurant</p>
                </div>
 
-               <div class="footer__textes">
-                  
-                  <div class="footer__textes::proposer">
-                     <i class="fas fa-utensils"></i>
-                     <p>Proposer un restaurant</p>
-                  </div>
-
-                  <div class="footer__textes::devenir">
-                     <i class="fas fa-hands-helping"></i>
-                     <p>Devenir partenaire</p>
-                  </div>
-
-                  <div class="footer__textes::contact">
-                     <p>Mentions légales</p>
-                     <p>Conatct</p>
-                  </div>
-
-
+               <div class="footer__textes__devenir">
+                  <i class="fas fa-hands-helping"></i>
+                  <p>Devenir partenaire</p>
                </div>
 
-         </footer>
+               <div class="footer__textes__contact">
+                  <p>Mentions légales</p>
+                  <p>Conatct</p>
+               </div>
 
-            <!--FIN-->
+
+            </div>
+
+      </footer>
+
+         <!--FIN-->
+
 
       </body>
 

@@ -1,49 +1,78 @@
-/*Bas de page*/
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  color: white;
-}
-
-.footer__textes {
-  margin: 15px;
-}
-.footer__textes__proposer {
-  display: flex;
-  color: white;
-  font-size: 1em;
-}
-.footer__textes__devenir {
-  display: flex;
-  color: white;
-  font-size: 1em;
-}
-.footer__textes__contact {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 1em;
-  margin-left: -5px;
+@charset "UTF-8";
+.header__logo__menu {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: white;
 }
 
 #header__logo__image {
-  margin-left: 15px;
-  margin-top: 15px;
+  width: 35%;
+  height: 32%;
+  min-height: 0px;
+  max-height: 80px;
+  margin-bottom: 10px;
 }
 
-.fa-utensils:before {
-  content: "\f2e7";
-  font-size: 10px;
-  margin-right: 5px;
+.header__fleche {
+  display: flex;
 }
 
-.fa-hands-helping:before {
-  content: "\f4c4";
-  font-size: 10px;
+.main__images {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: -10px;
+}
+
+.main__titre {
+  display: flex;
+}
+
+.main__titre__menu {
+  display: flex;
+  margin-top: -30px;
+}
+
+.main__titre__texte {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  border-radius: 15% 15% 0% 0%;
+  font-size: 1.8em;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: -10px;
+  font-family: "Shrikhand";
+}
+
+.fa-heart:before {
+  content: "\f004";
 }
 
 /*FIN*/
+/*Menu Entrées*/
+.main__menu__all {
+  display: flex;
+}
+.main__menu__titre {
+  display: flex;
+  text-decoration: none;
+  border-bottom: 2px solid #99e2d0;
+  padding-bottom: 5px;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../polices/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../../polices/Shrikhand/Shrikhand-Regular.ttf);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .header__logo {
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -86,17 +115,27 @@ footer {
 }
 .main__presentation__bouttonexplorer {
   display: flex;
+  flex-direction: column;
   background-color: #dc6eda;
   border-radius: 25px;
   width: 50%;
-  color: white;
-  font-weight: bold;
-  font-size: 0.8em;
+  height: 40px;
   justify-content: center;
   margin-left: 25%;
 }
+.main__presentation__bouttonconfig {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.main__presentation__titre {
+  font-weight: bold;
+  font-size: 1.3em;
+}
 .main__presentation__position {
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: normal;
   margin-top: 0px;
 }
@@ -110,6 +149,7 @@ footer {
   font-size: 1.1em;
   padding-bottom: 15px;
   padding-top: 30px;
+  margin-left: 10%;
 }
 .main__fonctionnement__un {
   display: flex;
@@ -156,24 +196,12 @@ footer {
 
 .fa-store:before {
   content: "\f54e";
-  color: #9356dc;
   margin-left: 3px;
   margin-right: 0px;
 }
 
 /*FIN*/
 /*Restautant*/
-img {
-  width: 90%;
-  min-height: 150px;
-  max-height: 300px;
-  border-radius: 7% 7% 0% 0%;
-  height: 10%;
-  align-content: center;
-  justify-content: center;
-  object-fit: cover;
-}
-
 .main__restaurants__plats {
   display: flex;
   flex-direction: column;
@@ -211,6 +239,16 @@ img {
 .main__restaurants__taille {
   margin-left: 0px;
 }
+.main__restaurants__images {
+  width: 90%;
+  min-height: 150px;
+  max-height: 300px;
+  border-radius: 7% 7% 0% 0%;
+  height: 10%;
+  align-content: center;
+  justify-content: center;
+  object-fit: cover;
+}
 
 .fa-heart:before {
   content: "\f004";
@@ -232,16 +270,51 @@ p {
 }
 
 /**FIN*/
-@font-face {
-  font-family: "Roboto";
-  src: url(../../polices/Roboto/Roboto-Light.ttf);
+/*Bas de page*/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: white;
 }
-@font-face {
-  font-family: "Shrikhand";
-  src: url(../../polices/Shrikhand/Shrikhand-Regular.ttf);
+
+.footer__textes {
+  margin: 15px;
 }
-body {
-  font-family: "Roboto", sans-serif;
+.footer__textes__proposer {
+  display: flex;
+  color: white;
+  font-size: 1em;
 }
+.footer__textes__devenir {
+  display: flex;
+  color: white;
+  font-size: 1em;
+}
+.footer__textes__contact {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1em;
+  margin-left: -5px;
+}
+
+#header__logo__image {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.fa-utensils:before {
+  content: "\f2e7";
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.fa-hands-helping:before {
+  content: "\f4c4";
+  font-size: 10px;
+}
+
+/*FIN*/
 
 /*# sourceMappingURL=style.css.map */
