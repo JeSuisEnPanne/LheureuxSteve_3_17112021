@@ -109,8 +109,6 @@ body {
 .main__presentation__reserver {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
   margin-top: 20px;
 }
 .main__presentation__bouttonexplorer {
