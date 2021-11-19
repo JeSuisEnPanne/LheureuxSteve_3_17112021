@@ -1,19 +1,36 @@
 
 .header__logo{
     text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) ;
+    box-shadow: 1px 4px 0px -1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
 
-    &__image
+}
+
+#header__logo__image
     {
-        width: 50%;
-        height: 32px;
+        width: 35%;
+        height: 32%;
+        min-height: 0px;
+        max-height: 80px;
+        margin-bottom: 10px;
+        
 
     }
-}
+
 
 .main__villes
 {
     display: flex;
-    font-family: "Shrikhand", sans-serif;
     align-items: center;
     justify-content: center;
+    font-family: "Shrikhand";
+    font-weight: bold;
+}
+
+.fa-map-marker-alt:before {
+    display: flex;
+    content: "\f3c5";
+    font-size: 0.8em;
+    margin-right: 10px;
 }

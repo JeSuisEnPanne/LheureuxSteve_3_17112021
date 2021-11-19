@@ -1,16 +1,77 @@
+/*Bas de page*/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: white;
+}
+
+.footer__textes {
+  margin: 15px;
+}
+.footer__textes__proposer {
+  display: flex;
+  color: white;
+  font-size: 1em;
+}
+.footer__textes__devenir {
+  display: flex;
+  color: white;
+  font-size: 1em;
+}
+.footer__textes__contact {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1em;
+  margin-left: -5px;
+}
+
+#header__logo__image {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.fa-utensils:before {
+  content: "\f2e7";
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.fa-hands-helping:before {
+  content: "\f4c4";
+  font-size: 10px;
+}
+
+/*FIN*/
 .header__logo {
   text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 4px 0px -1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
-.header__logo__image {
-  width: 50%;
-  height: 32px;
+
+#header__logo__image {
+  width: 35%;
+  height: 32%;
+  min-height: 0px;
+  max-height: 80px;
+  margin-bottom: 10px;
 }
 
 .main__villes {
   display: flex;
-  font-family: "Shrikhand", sans-serif;
   align-items: center;
   justify-content: center;
+  font-family: "Shrikhand";
+  font-weight: bold;
+}
+
+.fa-map-marker-alt:before {
+  display: flex;
+  content: "\f3c5";
+  font-size: 0.8em;
+  margin-right: 10px;
 }
 
 .main__presentation {
@@ -21,6 +82,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: 20px;
 }
 .main__presentation__bouttonexplorer {
   display: flex;
@@ -33,35 +95,78 @@
   justify-content: center;
   margin-left: 25%;
 }
+.main__presentation__position {
+  font-size: 0.7em;
+  font-weight: normal;
+  margin-top: 0px;
+}
 
+/**Fonctionnement*/
 .main__fonctionnement {
   display: flex;
   flex-direction: column;
 }
 .main__fonctionnement__titre {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  padding-bottom: 15px;
+  padding-top: 30px;
 }
 .main__fonctionnement__un {
   display: flex;
   flex-direction: row;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  align-items: center;
 }
 
-.fa-circle:before {
-  display: flex;
-  content: "\f111";
-  color: #6600e2;
-  width: 30px;
+.position__texte {
+  margin-left: 30px;
+}
+
+.numero {
+  background-color: #9356dc;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 20px;
+}
+.numero__choix {
+  margin-left: 6px;
+  margin-top: 3px;
+  margin-right: 0px;
 }
 
 .fa-mobile-alt:before {
   display: flex;
   content: "\f3cd";
+  margin-left: 7px;
+  margin-right: 0px;
 }
 
+.fa-tasks:before {
+  content: "\f0ae";
+  margin-left: 3px;
+  margin-right: 0px;
+}
+
+.fa-store:before {
+  content: "\f54e";
+  color: #9356dc;
+  margin-left: 3px;
+  margin-right: 0px;
+}
+
+/*FIN*/
 /*Restautant*/
 img {
-  width: 50%;
-  max-height: 125px;
+  width: 90%;
+  min-height: 150px;
+  max-height: 300px;
   border-radius: 7% 7% 0% 0%;
   height: 10%;
   align-content: center;
@@ -74,14 +179,43 @@ img {
   flex-direction: column;
   align-items: center;
 }
-
-.restaurants__block {
+.main__restaurants__secteur {
+  display: flex;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  border-radius: 0% 0% 7% 7%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main__restaurants__block, .main__restaurants h2 {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: auto;
-  background-color: yellowgreen;
-  border-radius: 0% 0% 7% 7%;
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.main__restaurants__icone {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 30px;
+}
+.main__restaurants__titre, .main__restaurants h1 {
+  font-size: 1.1em;
+  margin-left: 5%;
+}
+.main__restaurants__taille {
+  margin-left: 0px;
+}
+
+.fa-heart:before {
+  content: "\f004";
+  font-size: 20px;
+  color: black;
 }
 
 h2 {
@@ -89,42 +223,15 @@ h2 {
   font-weight: bold;
 }
 
-.lala {
-  display: flex;
-  flex-direction: column;
+p {
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-size: 0.8em;
 }
 
 /**FIN*/
-/*Bas de page*/
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  color: white;
-}
-footer__logo {
-  display: flex;
-  width: 50%;
-}
-footer__textes {
-  display: flex;
-}
-footer__proposer {
-  display: flex;
-  color: white;
-  background-color: yellow;
-  font-size: 3em;
-}
-footer__devenir {
-  display: flex;
-  color: white;
-}
-footer__contact {
-  display: flex;
-  color: white;
-}
-
-/*FIN*/
 @font-face {
   font-family: "Roboto";
   src: url(../../polices/Roboto/Roboto-Light.ttf);

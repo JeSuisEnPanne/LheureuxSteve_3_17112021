@@ -1,0 +1,57 @@
+/*Bas de page*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    color: white;
+
+}
+
+.footer__textes{
+    margin: 15px;
+
+
+        &__proposer{
+            display: flex;
+            color: white;
+            font-size: 1em;
+        }
+
+        &__devenir{
+            display: flex;
+            color: white;
+            font-size: 1em;
+        }
+        
+        &__contact{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 1em;
+            margin-left: -5px;
+        }
+
+}
+
+
+#header__logo__image{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+.fa-utensils:before {
+    content: "\f2e7";
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.fa-hands-helping:before {
+    content: "\f4c4";
+    font-size: 10px;
+}
+
+
+
+/*FIN*/

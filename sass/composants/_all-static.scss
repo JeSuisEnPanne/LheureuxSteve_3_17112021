@@ -5,30 +5,43 @@
     
 
     &__reserver {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+            
 
-    }
+        }
 
     &__bouttonexplorer {
-        display: flex;
-        background-color: #dc6eda;
-        border-radius: 25px;
-        width: 50%;
-        color: white;
-        font-weight: bold;
-        font-size: 0.8em;
-        justify-content: center;
-        margin-left: 25%;
+            display: flex;
+            background-color: #dc6eda;
+            border-radius: 25px;
+            width: 50%;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+            justify-content: center;
+            margin-left: 25%;
                        
     }
 
     
+
+
+    &__position{
+        
+        font-size: 0.7em;
+        font-weight: normal;
+        margin-top: 0px;
+
 }
 
+}
+
+
+/**Fonctionnement*/
 
 
 .main__fonctionnement
@@ -36,38 +49,82 @@
     display: flex;
     flex-direction: column;
     
-
-    &__titre{
-        font-size: 1.2em;
-
-    }
-
-    &__un {
-
-    display: flex;
-    flex-direction: row;
-
-    }
+    
 
 
+        &__titre{
+                font-size: 1.1em;
+                padding-bottom: 15px;
+                padding-top: 30px;
+
+            }
+
+        &__un {
+
+            display: flex;
+            flex-direction: row;
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 30px;
+            margin-left: 25px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+            padding-bottom: 10px;
+            align-items: center;
+
+            }
+}
+
+.position__texte{
+    
+    margin-left: 30px;
+    
 }
 
 
+.numero{
+    background-color: #9356dc;
+    height: 20px; 
+	width: 20px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 20px;
 
-.fa-circle:before {
-    display: flex;
-    content: "\f111";
-    color: #6600e2;
-    width: 30px;
 
+
+
+        &__choix{
+            margin-left: 6px;
+            margin-top: 3px;
+            margin-right: 0px;
+            }
 }
-
 
 
 .fa-mobile-alt:before {
     display: flex;
     content: "\f3cd";
+    margin-left: 7px;
+    margin-right: 0px;
+
 }
+
+.fa-tasks:before {
+    content: "\f0ae";
+    margin-left: 3px;
+    margin-right: 0px;
+}
+
+
+.fa-store:before {
+    content: "\f54e";
+    color: #9356dc;
+    margin-left: 3px;
+    margin-right: 0px;
+}
+
+
+/*FIN*/
+
 
 
 
@@ -77,8 +134,9 @@
 
 
 img {
-    width: 50%;
-    max-height: 125px;
+    width: 90%;
+    min-height: 150px;
+    max-height: 300px;
     border-radius: 7% 7% 0% 0%;
     height: 10%;
     align-content: center;
@@ -88,68 +146,90 @@ img {
   
 }
 
+.main__restaurants{
 
 
-.main__restaurants__plats{
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        &__plats{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__secteur{
+            display: flex;
+            width: 90%;
+            height: auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0% 0% 7% 7%;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+            border-left: 1px solid rgba(0, 0, 0, 0.1) ;
+            border-right: 1px solid rgba(0, 0, 0, 0.1) ;
+            
+            
+
+        }
+
+        &__block, h2 {
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            
+
+        }
+
+
+
+        &__icone{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 30px;
+        }
+
+        &__titre, h1{
+            font-size: 1.1em;
+            margin-left: 5%;
+        }
+
+        &__taille{
+            margin-left: 0px;
+        }
+
+
 }
 
-.restaurants__block {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: auto;
-    background-color: yellowgreen;
-    border-radius: 0% 0% 7% 7%;
+
+.fa-heart:before {
+    content: "\f004";
+    font-size: 20px;
+    color: rgb(0, 0, 0);
 }
+
 
 h2{
     font-size: 0.9em;
     font-weight: bold;
 }
-.lala{
-    display: flex;
-    flex-direction: column;
+
+p{
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    font-size: 0.8em;
 }
+
+
+
+
 /**FIN*/
 
 
 
-/*Bas de page*/
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #353535;
-    color: white;
-
-        &__logo{
-        display: flex;
-        width: 50%;
-        }
-
-        &__textes{
-            display: flex;
-            
-            
-        }
-
-        &__proposer{
-            display: flex;
-            color: white;
-            background-color: yellow;
-            font-size: 3em;
-        }
-        &__devenir{
-            display: flex;
-            color: white;
-        }
-        &__contact{
-            display: flex;
-            color: white;
-        }
-}
-/*FIN*/
