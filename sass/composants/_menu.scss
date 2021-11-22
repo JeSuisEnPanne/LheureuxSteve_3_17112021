@@ -114,52 +114,81 @@
             
         }
 
+
+        &__choix1:active{
+            background: linear-gradient(90deg, rgba(255,255,255,1) 90%, rgba(153,226,208,1) 90%);
+            padding-right: 40px;
+            position: relative;
+            
+        }
+
+
+
         &__plat{
             font-weight: bold;
         }
 
-        &__description{
+
+
+        .main__menu__super{
+            display: flex;
+            margin-top: +20px;
+          
+
+            
 
         }
+        
 
-        &__prix{
+
+
+        .main__menu__prix{
             display: flex;
             flex-direction: column;
+        
             justify-content: flex-end;
             align-items: center;
             font-weight: bold;
-            background-color: #ffffff;
+            
             width: 20px;
             height: 40px;
             border-radius: 0px 7px 7px 0px;
-           
+            padding-right: 50px;
             
-
-
-        }
-
-        &__validation{
-            display: flex;
-            flex-direction: column;
-            background-color: #99e2d0;
-            width: 40px;
-            height: 40px;
-            border-radius: 0px 7px 7px 0px;
-            position: relative;
-            
-
-           
-
         }
 
 
-        .fa-check-circle:before {
+
+       
+
+        .fa-check-circle {
             content: "\f058";
-        position: absolute;
-        padding-left: 12px;
-        padding-top: 12px;
+        position: none;
+        font-size: 1.5em;
+        visibility: hidden;
+        
+
         }
 
+        .fa-check-circle:active {
+            content: "\f058";
+        visibility: visible;
+        font-size: 1.5em;
+       
+        
+
+        }
+
+
+        .main__menu__validation{
+            margin-right: 7px;
+            display: flex;
+        }
+
+        .main__menu__validation:active{
+            
+            display: flex;
+        }
 
 
 
