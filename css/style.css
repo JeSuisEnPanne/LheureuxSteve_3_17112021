@@ -213,6 +213,7 @@ body {
   flex-direction: column;
   align-content: center;
   margin-top: 70px;
+  margin-bottom: 60px;
 }
 .main__fonctionnement__titre {
   font-size: 0.6em;
@@ -405,6 +406,13 @@ footer {
   color: white;
   font-size: 0.8em;
   margin-left: -5px;
+}
+
+a {
+  color: white;
+  font-size: 0.8em;
+  margin-left: 5px;
+  text-decoration: none;
 }
 
 #header__logo__image__basdepage {
