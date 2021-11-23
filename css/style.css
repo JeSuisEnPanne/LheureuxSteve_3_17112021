@@ -98,20 +98,12 @@
   margin-right: 5px;
   position: relative;
   width: auto;
-  animation: progress-menu 3s;
+  animation: progress-menu 500ms reverse;
 }
 .main__menu__choix1:active {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.8043328615) 88%, #99e2d0 88%);
   padding-right: 12%;
   animation: progress-bar 1000ms;
-}
-@keyframes progress-bar22 {
-  0% {
-    transform: scaleX(30%);
-  }
-  100% {
-    transform: scaleX(10%);
-  }
 }
 @keyframes progress-bar {
   0% {
@@ -119,6 +111,14 @@
   }
   100% {
     transform: translateX(1%);
+  }
+}
+@keyframes progress-menu {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .main__menu__plat {
@@ -149,7 +149,7 @@
   animation: wheelHueColor 1.5s normal linear;
 }
 @keyframes wheelHueColor {
-  70% {
+  78% {
     transform: rotate(0deg);
   }
   100% {
