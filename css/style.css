@@ -59,6 +59,24 @@
 
 /*FIN*/
 /*Menu Entrées*/
+.main__menu {
+  /*
+          @keyframes wheelHueColor {
+      from, to { color: hsl(324, 70%, 45%); }
+      10%      { color: hsl(360, 65%, 45%); }
+      20%      { color: hsl( 36, 80%, 45%); }
+      30%      { color: hsl( 72, 75%, 35%); }
+      40%      { color: hsl(108, 65%, 35%); }
+      50%      { color: hsl(144, 75%, 35%); }
+      60%      { color: hsl(180, 75%, 35%); }
+      70%      { color: hsl(216, 60%, 45%); }
+      80%      { color: hsl(252, 65%, 50%); }
+      90%      { color: hsl(288, 60%, 40%); }
+  }
+  */
+  /*ANIMATION*/
+  /*FIN*/
+}
 .main__menu__all {
   display: flex;
   margin-left: 20px;
@@ -79,10 +97,21 @@
   border-radius: 10px;
   margin-right: 5px;
   position: relative;
+  transition: 1s;
+  width: auto;
 }
 .main__menu__choix1:active {
-  background: linear-gradient(90deg, white 90%, #99e2d0 90%);
-  padding-right: 40px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8043328615) 88%, #99e2d0 88%);
+  padding-right: 12%;
+  animation: progress-bar 1000ms;
+}
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(3);
+  }
+  50% {
+    transform: scaleX(1);
+  }
 }
 .main__menu__plat {
   font-weight: bold;
@@ -109,6 +138,15 @@
   right: 11px;
   font-weight: bold;
   color: white;
+  animation: wheelHueColor 1.5s normal linear;
+}
+@keyframes wheelHueColor {
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .main__menu .main__menu__validation {
   margin-right: 7px;
