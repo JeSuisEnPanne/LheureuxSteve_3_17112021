@@ -1,17 +1,26 @@
+/*
 @font-face
 {
     font-family: "Roboto";
-    src: url(../../polices/Roboto/Roboto-Light.ttf);
+    src: url(../../polices/Roboto/Roboto-Light.ttf) format("truetype");
     
 }
 
 @font-face
 {
     font-family: "Shrikhand";
-    src: url(../../polices/Shrikhand/Shrikhand-Regular.ttf);
+    src: url(../../polices/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+    font-weight: bold;
     
 
 }
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 body{
 font-family: "Roboto", sans-serif;
