@@ -110,6 +110,7 @@
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
             margin-right: 5px;
+            position: relative;
 
             
         }
@@ -118,7 +119,7 @@
         &__choix1:active{
             background: linear-gradient(90deg, rgba(255,255,255,1) 90%, rgba(153,226,208,1) 90%);
             padding-right: 40px;
-            position: relative;
+            
             
         }
 
@@ -149,11 +150,11 @@
             justify-content: flex-end;
             align-items: center;
             font-weight: bold;
-            
+            margin-right: 8px;
             width: 20px;
             height: 40px;
             border-radius: 0px 7px 7px 0px;
-            padding-right: 50px;
+           
             
         }
 
@@ -163,21 +164,16 @@
 
         .fa-check-circle {
             content: "\f058";
-        position: none;
-        font-size: 1.5em;
-        visibility: hidden;
+        font-size: 1.4em;
+        position: absolute;
+        right: 11px;
+        font-weight: bold;
+        color: white;
         
 
         }
 
-        .fa-check-circle:active {
-            content: "\f058";
-        visibility: visible;
-        font-size: 1.5em;
-       
-        
-
-        }
+    
 
 
         .main__menu__validation{

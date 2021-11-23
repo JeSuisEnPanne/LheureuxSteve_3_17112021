@@ -78,11 +78,11 @@
   background-color: white;
   border-radius: 10px;
   margin-right: 5px;
+  position: relative;
 }
 .main__menu__choix1:active {
   background: linear-gradient(90deg, white 90%, #99e2d0 90%);
   padding-right: 40px;
-  position: relative;
 }
 .main__menu__plat {
   font-weight: bold;
@@ -97,21 +97,18 @@
   justify-content: flex-end;
   align-items: center;
   font-weight: bold;
+  margin-right: 8px;
   width: 20px;
   height: 40px;
   border-radius: 0px 7px 7px 0px;
-  padding-right: 50px;
 }
 .main__menu .fa-check-circle {
   content: "\f058";
-  position: none;
-  font-size: 1.5em;
-  visibility: hidden;
-}
-.main__menu .fa-check-circle:active {
-  content: "\f058";
-  visibility: visible;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  position: absolute;
+  right: 11px;
+  font-weight: bold;
+  color: white;
 }
 .main__menu .main__menu__validation {
   margin-right: 7px;
