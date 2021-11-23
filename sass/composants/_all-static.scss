@@ -197,7 +197,7 @@
 
         &__secteur{
             display: flex;
-            width: 90%;
+            width: 88.5%;
             height: auto;
             background-color: rgb(255, 255, 255);
             border-radius: 0% 0% 25px 25px;
@@ -205,19 +205,25 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
             border-left: 1px solid rgba(0, 0, 0, 0.1) ;
             border-right: 1px solid rgba(0, 0, 0, 0.1) ;
+            margin-left: 5px;
+
+            
            
             
 
         }
 
-        &__block, h2 {
+        &__block, h2, p {
             display: flex;
             flex-direction: column;
             line-height: 12px;
             margin-top: 7px;
             margin-bottom: 5px;
             margin-left: 5px;
-            
+            align-items: flex-start;
+            align-content: flex-start;
+            justify-content: flex-start;
+            line-height: 0.2em;
 
         }
 
@@ -242,14 +248,35 @@
         }
 
         &__images{
-            width: 90%;
+            width: 99%;
             min-height: 150px;
             max-height: 300px;
             border-radius: 25px 25px 0% 0%;
             height: 10%;
+
+            object-fit: cover;
+            
+        }
+
+        &__imgliens{
+            display: flex;
             align-content: center;
             justify-content: center;
+            align-items: center;
             object-fit: cover;
+
+            width: 90%;
+            min-height: 150px;
+            max-height: 300px;
+
+            
+        }
+
+        &__lien{
+            color: black;
+            text-decoration: none;
+            font-size: 1em;
+            
             
         }
 
@@ -279,8 +306,7 @@
 
 .fa-heart:before {
     content: "\f004";
-    font-weight: bold;
-    color: #ff79da;
+
     font-size: 1.5em;
     transition: 1s;
 }
@@ -288,14 +314,14 @@
 .fa-heart:active::before {
     content: "\f004";
     font-weight: bold;
-    color: #99E2D0;
+    color: #FF79DA;
     transform: scale(1s)ease-in-out;
 }
 
 .fa-heart:hover::before {
     content: "\f004";
     font-weight: bold;
-    color: #99E2D0;
+    color: #FF79DA;
     transform: scale(1s)ease-in-out;
 }
 
@@ -313,7 +339,6 @@ p{
     margin: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 5px;
 
     font-size: 0.8em;
 }
