@@ -119,7 +119,7 @@
             
         }
 
-        
+
         &__choix1:active{
             
             
@@ -167,7 +167,6 @@
             overflow: hidden;
             white-space: nowrap;   
             text-overflow: ellipsis;
-            
         }
         
         /*
@@ -281,6 +280,43 @@
 
         }
 
+
+
+}
+
+
+.bouttonexplorer {
+    display: flex; 
+    align-items: center;             
+    background: linear-gradient(143deg, rgba(255,121,218,1) 22%, rgba(147,86,220,1) 77%);
+    border-radius: 25px;
+    width: 30%;
+    height: 50px;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 52px;
+    margin-bottom: 82px;
+    
+    box-shadow: 1px 2px 10px rgba($color: #000000, $alpha: 0.5);
+            
+}
+
+.bouttonexplorer:hover {
+
+background: linear-gradient(143deg, rgba(255,121,218,0.8043328614774465) 22%, rgba(147,86,220,0.8043328614774465) 77%);
+box-shadow: 1px 2px 10px rgba($color: #000000, $alpha: 1);
+
+        
+}
+
+
+
+.bouttonconfig{
+font-size: 0.9em;
+font-weight: bold;
+color: white;
+padding-left: 8px;
+padding-right: 8px;
 
 
 }
