@@ -97,20 +97,28 @@
   border-radius: 10px;
   margin-right: 5px;
   position: relative;
-  transition: 1s;
   width: auto;
+  animation: progress-menu 3s;
 }
 .main__menu__choix1:active {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.8043328615) 88%, #99e2d0 88%);
   padding-right: 12%;
   animation: progress-bar 1000ms;
 }
+@keyframes progress-bar22 {
+  0% {
+    transform: scaleX(30%);
+  }
+  100% {
+    transform: scaleX(10%);
+  }
+}
 @keyframes progress-bar {
   0% {
-    transform: scaleX(3);
+    transform: translateX(10%);
   }
-  50% {
-    transform: scaleX(1);
+  100% {
+    transform: translateX(1%);
   }
 }
 .main__menu__plat {

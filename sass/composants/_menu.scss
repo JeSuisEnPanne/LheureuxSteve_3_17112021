@@ -83,6 +83,8 @@
 
 .main__menu{
 
+        
+
         &__all{
             display: flex;
             margin-left: 20px;
@@ -111,8 +113,8 @@
             border-radius: 10px;
             margin-right: 5px;
             position: relative;
-            transition: 1s;
             width: auto;
+            animation: progress-menu 3s;
 
             
         }
@@ -128,13 +130,23 @@
         }
 
 
+        @keyframes progress-bar22{
+            0% {
+                transform: scaleX(30%);
+            }
+            100% {
+                transform: scaleX(10%);
+            }
+        }
+
         @keyframes progress-bar{
             0% {
-                transform: scaleX(3);
+                transform: translateX(10%);
             }
-            50% {
-                transform: scaleX(1);
+            100% {
+                transform: translateX(1%);
             }
+        
         }
 
         /*
