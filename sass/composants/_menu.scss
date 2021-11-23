@@ -119,8 +119,17 @@
             
         }
 
-
+        
         &__choix1:active{
+            
+            
+            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
+            padding-right: 12%;
+            animation: progress-bar 1000ms;
+            
+        }
+
+        &__choix1:hover{
             
             
             background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
@@ -151,6 +160,16 @@
             }
         }
 
+        .main__menu__description{
+            
+            display: inline-block;
+            width: 260px;
+            overflow: hidden;
+            white-space: nowrap;   
+            text-overflow: ellipsis;
+            
+        }
+        
         /*
         @keyframes wheelHueColor {
     from, to { color: hsl(324, 70%, 45%); }
@@ -216,7 +235,7 @@
         color: white;
        
        
-        animation: wheelHueColor 1.5s normal linear;
+        animation: wheelHueColor 1.4s normal linear;
         }
 
 
@@ -226,7 +245,7 @@
 
         /*ANIMATION*/
         @keyframes wheelHueColor {
-            78% {
+            90% {
                 transform: rotate(0deg);
             }
             100% { 
