@@ -45,11 +45,13 @@ a{
 
 }
 
-#header__logo__image__basdepage{
+.header__logo__image__basdepage{
     margin-left: 15px;
     margin-top: 15px;
-    filter: invert(100%);
     width: 100px;
+    /*
+    filter: invert(100%);
+    */
 }
 
 .fa-utensils:before {

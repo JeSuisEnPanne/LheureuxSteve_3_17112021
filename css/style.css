@@ -327,13 +327,13 @@ body {
 
 .chargement {
   /*creation du loader*/
-  border: 10px solid #ffffff;
-  border-top: 10px solid #078b6b;
-  border-bottom: 10px solid #FF79DA;
+  border: 10px solid #99E2D0;
+  border-top: 10px solid #FF79DA;
+  border-bottom: 10px solid #9356DC;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 2s linear;
+  animation: rotation 2s linear;
   animation-fill-mode: forwards;
   /*placement du loader milieu de la page*/
   position: absolute;
@@ -342,7 +342,7 @@ body {
 }
 
 /*animation du loader*/
-@keyframes spin {
+@keyframes rotation {
   0% {
     transform: rotate(0deg);
     color: #c32283;
@@ -358,22 +358,22 @@ body {
 }
 #background {
   /*creation du loader*/
+  background-color: currentColor;
   display: flex;
-  background-color: black;
   width: 100%;
   height: 100%;
-  animation: degrader 2s linear;
+  animation: degrader 3s linear;
   animation-fill-mode: forwards;
   position: absolute;
 }
 
 @keyframes degrader {
-  from, to {
+  0% {
     color: #FF79DA;
   }
   50% {
     opacity: 1;
-    color: #99E2D0;
+    color: #9356DC;
   }
   100% {
     opacity: 0;
@@ -519,7 +519,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*
   position: relative;
+  */
 }
 .main__restaurants__secteur {
   display: flex;
@@ -620,14 +622,14 @@ body {
   content: "\f004";
   font-weight: bold;
   color: #FF79DA;
-  transform: scale(1s) ease-in-out;
+  transform: scale(1);
 }
 
 .fa-heart:hover::before {
   content: "\f004";
   font-weight: bold;
   color: #FF79DA;
-  transform: scale(1s) ease-in-out;
+  transform: scale(1);
 }
 
 /*fin*/
@@ -683,11 +685,13 @@ a {
   text-decoration: none;
 }
 
-#header__logo__image__basdepage {
+.header__logo__image__basdepage {
   margin-left: 15px;
   margin-top: 15px;
-  filter: invert(100%);
   width: 100px;
+  /*
+  filter: invert(100%);
+  */
 }
 
 .fa-utensils:before {

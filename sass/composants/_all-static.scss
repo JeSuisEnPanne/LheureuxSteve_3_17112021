@@ -5,13 +5,13 @@ body{
 
 .chargement{
     /*creation du loader*/
-    border: 10px solid #ffffff;
-    border-top: 10px solid #078b6b;
-    border-bottom: 10px solid #FF79DA;
+    border: 10px solid #99E2D0;
+    border-top: 10px solid #FF79DA;
+    border-bottom: 10px solid #9356DC;
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin 2s linear;
+    animation: rotation 2s linear;
     animation-fill-mode : forwards;
 
 
@@ -28,7 +28,7 @@ body{
 }
 
 /*animation du loader*/
-@keyframes spin {
+@keyframes rotation {
 
     0%  {
             
@@ -53,11 +53,11 @@ body{
 
 #background{
 /*creation du loader*/
+background-color: currentColor;
 display: flex;
-background-color: black;
 width: 100%;
 height: 100%;
-animation: degrader 2s linear;
+animation: degrader 3s linear;
 animation-fill-mode : forwards;
 position: absolute;
 
@@ -66,12 +66,12 @@ position: absolute;
 
 
 @keyframes degrader {
-  from, to { 
+  0%        { 
             color: #FF79DA; }
 
   50%      {
              opacity: 1;
-             color: #99E2D0; }
+             color: #9356DC; }
 
 
   100%      {
@@ -79,16 +79,6 @@ position: absolute;
              color: #99E2D0;
             }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -314,14 +304,16 @@ position: absolute;
 
 .main__restaurants{
 
-
+ 
 
         &__plats{
 
             display: flex;
             flex-direction: column;
             align-items: center;
+            /*
             position: relative;
+            */
         }
 
         &__secteur{
@@ -462,14 +454,14 @@ position: absolute;
     content: "\f004";
     font-weight: bold;
     color: #FF79DA;
-    transform: scale(1s)ease-in-out;
+    transform: scale(1);
 }
 
 .fa-heart:hover::before {
     content: "\f004";
     font-weight: bold;
     color: #FF79DA;
-    transform: scale(1s)ease-in-out;
+    transform: scale(1);
 }
 
 
