@@ -107,8 +107,15 @@
             text-decoration : none;
             border-bottom: 2px solid #99e2d0;
             padding-bottom: 5px ;
+            font-weight: 300;
+            font-size: 1em;
 
 
+        }
+
+        h2{
+            font-weight: 300;
+            font-size: 1em;
         }
 
 
@@ -124,10 +131,11 @@
             margin-right: 5px;
             position: relative;
             width: auto;
-            animation: progress-menu 500ms reverse;
+            animation: progress-menu 500ms;
 
             
         }
+
 
 
         &__choix1:active{
@@ -162,7 +170,7 @@
 
 
         @keyframes progress-menu{
-            50% {
+            40% {
                 opacity: 0;
             }
             100% {
@@ -177,6 +185,8 @@
             overflow: hidden;
             white-space: nowrap;   
             text-overflow: ellipsis;
+            font-weight: 300;
+            font-size: 0.95em;
         }
         
         /*
@@ -198,7 +208,8 @@
 
 
         &__plat{
-            font-weight: bold;
+            font-weight: 500;
+            font-size: 1.1em;
         }
 
 
@@ -226,6 +237,8 @@
             width: 20px;
             height: 40px;
             border-radius: 0px 7px 7px 0px;
+            font-weight: 500;
+            font-size: 1.2em;
            
             
         }
@@ -244,7 +257,7 @@
         color: white;
        
        
-        animation: wheelHueColor 1.4s normal linear;
+        animation: rotation 1.4s normal linear;
         }
 
 
@@ -253,8 +266,8 @@
 
 
         /*ANIMATION*/
-        @keyframes wheelHueColor {
-            90% {
+        @keyframes rotation {
+            80% {
                 transform: rotate(0deg);
             }
             100% { 
@@ -268,26 +281,93 @@
     
 
 
-        .main__menu__validation{
-            margin-right: 7px;
-            display: flex;
-        }
-
-        .main__menu__validation:active{
-            
-            display: flex;
-        }
-
-
-
-
         &__choix2{
+            display: flex;
+            margin-left: 20px;
+            align-items: flex-end;
+            justify-content: space-between;
+            box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-right: 5px;
+            position: relative;
+            width: auto;
+            animation: progress-menu2 500ms;
 
+            
         }
+
+
+        &__choix2:active{
+            
+            
+            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
+            padding-right: 12%;
+            animation: progress-bar 1000ms;
+            
+        }
+
+        &__choix2:hover{
+            
+            
+            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
+            padding-right: 12%;
+            animation: progress-bar 1000ms;
+            
+        }
+
+        @keyframes progress-menu2{
+            60% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
 
 
         &__choix3{
+            display: flex;
+            margin-left: 20px;
+            align-items: flex-end;
+            justify-content: space-between;
+            box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-right: 5px;
+            position: relative;
+            width: auto;
+            animation: progress-menu3 500ms;
 
+            
+        }
+
+        &__choix3:active{
+            
+            
+            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
+            padding-right: 12%;
+            animation: progress-bar 1000ms;
+            
+        }
+
+        &__choix3:hover{
+            
+            
+            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
+            padding-right: 12%;
+            animation: progress-bar 1000ms;
+            
+        }
+
+        @keyframes progress-menu3{
+            80% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
 
 
