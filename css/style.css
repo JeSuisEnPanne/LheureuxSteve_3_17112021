@@ -264,7 +264,7 @@
 .bouttonexplorer {
   display: flex;
   align-items: center;
-  background: linear-gradient(143deg, white 22%, #9356dc 77%);
+  background: linear-gradient(143deg, #ff79da 22%, #9356dc 77%);
   border-radius: 25px;
   width: 50%;
   height: 50px;
@@ -695,7 +695,7 @@ a {
   margin-left: 15px;
   margin-top: 15px;
   width: 100px;
-  filter: invert(1);
+  filter: invert(100%);
 }
 
 .fa-utensils:before {
