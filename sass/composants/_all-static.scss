@@ -1,3 +1,107 @@
+
+
+
+
+.chargement{
+    /*creation du loader*/
+    border: 10px solid #ffffffd2;
+    border-top: 10px solid #078b6b;
+    border-bottom: 10px solid #FF79DA;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear;
+    animation-fill-mode : forwards;
+
+
+/*placement du loader milieu de la page*/
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    
+
+
+}
+
+/*animation du loader*/
+@keyframes spin {
+
+    0%  {
+            
+            transform: rotate(0deg);
+        }
+    99% {
+            
+            opacity: 1;
+        }
+    100% {
+            transform: rotate(360deg);
+            opacity: 0;
+                 }   
+         }
+
+
+
+
+
+/*Bare de chargement
+
+
+
+.demo {
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: justify;
+}
+.custom-loading-spinner {
+    cursor: progress;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.custom-loading-spinner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10001;
+    overflow: hidden;
+    background: #0b0b0b;
+    opacity: 1;
+  
+}
+.custom-loading-spinner::after {
+    box-sizing: border-box;
+    z-index: 10002;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: custom-loading 1s linear infinite;
+}
+
+@keyframes custom-loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes custom {
+    90% { transform: scale(0); }
+    100% { transform: scale(0); }
+}
+
+*/
+
+
+/*FIN*/
+
 .main__villes, p{
     display: flex;
     font-size: 1.2em;
@@ -371,6 +475,7 @@ p{
 
 
 /**FIN*/
+
 
 
 
