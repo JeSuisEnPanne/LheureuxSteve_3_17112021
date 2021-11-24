@@ -23,6 +23,7 @@
     position: absolute;
     left: 20px;
     top: 18px;
+    font-size: 25px;
 }
 
 .fa-arrow-left:before {
@@ -132,6 +133,7 @@
             position: relative;
             width: auto;
             animation: progress-menu 500ms;
+            margin-bottom: 20px;
 
             
         }
@@ -189,6 +191,8 @@
             font-size: 0.95em;
         }
         
+    
+
         /*
         @keyframes wheelHueColor {
     from, to { color: hsl(324, 70%, 45%); }
@@ -255,6 +259,7 @@
         right: 11px;
         font-weight: bold;
         color: white;
+        margin-top: -1px;
        
        
         animation: rotation 1.4s normal linear;
@@ -293,6 +298,7 @@
             position: relative;
             width: auto;
             animation: progress-menu2 500ms;
+            margin-bottom: 20px;
 
             
         }
@@ -339,6 +345,7 @@
             position: relative;
             width: auto;
             animation: progress-menu3 500ms;
+            margin-bottom: 20px;
 
             
         }

@@ -18,21 +18,21 @@ footer {
             display: flex;
             align-items: baseline;
             color: white;
-            font-size: 0.8em;
+            font-size: 1.2em;
         }
 
         &__devenir{
             display: flex;
             align-items: baseline;
             color: white;
-            font-size: 0.8em;
+            font-size: 1.2em;
         }
         
         &__contact{
             display: flex;
             flex-direction: column;
             color: white;
-            font-size: 0.8em;
+            font-size: 1.2em;
             margin-left: 0px;
         }
 
@@ -54,13 +54,13 @@ a{
 
 .fa-utensils:before {
     content: "\f2e7";
-    font-size: 9px;
+    font-size: 13px;
     margin-right: 6px;
 }
 
 .fa-hands-helping:before {
     content: "\f4c4";
-    font-size: 9px;
+    font-size: 13px;
     margin-right: 3px;
 }
 
