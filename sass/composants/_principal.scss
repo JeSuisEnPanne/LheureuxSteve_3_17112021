@@ -19,31 +19,8 @@ body{
     position: absolute;
     
     margin-top: 40%;
-
-    
-    
-
-
 }
 
-/*animation du loader*/
-@keyframes rotation {
-
-    0%  {
-            
-            transform: rotate(0deg);
-            color: hsl(324, 70%, 45%);
-            visibility: visible;
-        }
-    99% {
-    
-            color: hsl(324, 70%, 45%);
-        }
-    100% {
-            transform: rotate(360deg);
-            visibility: hidden;
-                 }   
-         }
 
 
 
@@ -68,52 +45,6 @@ body{
 
 
 
-
-@keyframes degrader {
-  0%        { 
-            color: #FF79DA;
-            visibility: visible;
-            }
-
-  50%      {
-             color: #9356DC; }
-
-
-  100%      {
-             color: #99E2D0;
-             visibility: hidden;
-            }
-}
-
-
-
-
-
-
-
-
-
-
-         /*animation du loader
-@keyframes spin {
-
-    0%  {
-            
-            transform: rotate(0deg);
-        }
-    99% {
-            
-            opacity: 1;
-        }
-    100% {
-            transform: rotate(360deg);
-            opacity: 0;
-                 }   
-         }
-
-*/
-
-/*FIN*/
 
 .main__villes, p{
     display: flex;
