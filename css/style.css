@@ -106,10 +106,19 @@
     opacity: 1;
   }
 }
+.main__menu__descriptiontop {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+.main__menu .prix {
+  font-size: 0.9em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
 .main__menu__rectexte {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: space-between;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -118,8 +127,7 @@
   width: 100%;
   height: 60px;
   margin-left: 15px;
-  animation: bien2 2s linear;
-  animation-fill-mode: forwards;
+  margin-top: 20px;
 }
 .main__menu__rec {
   width: 0%;
@@ -127,6 +135,8 @@
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
   margin-right: 15px;
+}
+.main__menu__rec:active {
   animation: bien 2s linear;
   animation-fill-mode: forwards;
 }
@@ -161,12 +171,16 @@
   font-weight: 300;
   font-size: 0.95em;
   margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .main__menu__plat {
   display: inline-block;
   font-weight: 500;
   font-size: 1.1em;
   margin-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 .main__menu .main__menu__prix {
   display: flex;
@@ -190,6 +204,8 @@
   color: white;
   margin-top: 20px;
   margin-right: 20px;
+}
+.main__menu .fa-check-circle:active {
   animation: rotationvalidation 1.4s normal linear;
   animation-fill-mode: forwards;
 }
