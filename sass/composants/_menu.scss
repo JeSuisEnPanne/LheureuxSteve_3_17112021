@@ -123,63 +123,92 @@
 
         &__choix1{
             display: flex;
-            margin-left: 20px;
             align-items: flex-end;
             justify-content: space-between;
+
+            
+
+            
+        }
+
+       
+
+        &__rectexte{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
             box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
-            background-color: rgb(255, 255, 255);
+            background-color: white;
             border-radius: 10px;
-            margin-right: 5px;
             position: relative;
-            width: auto;
-            animation: progress-menu 500ms;
-            margin-bottom: 20px;
+            width: 100%;
+            height: 60px;
+            margin-left: 15px;
+            animation: bien2 2s linear;
+            animation-fill-mode : forwards;
             
+  
 
-            
+
+        }
+
+
+        &__rec{
+            width: 0%;
+            height: 60px;
+            background-color: #99E2D0;
+            border-radius: 0px 10px 10px 0px;
+            margin-right: 15px;
+            animation: bien 2s linear;
+            animation-fill-mode : forwards;
         }
 
 
 
-        &__choix1:active{
-            
-            
-            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
-            padding-right: 12%;
-            animation: progress-bar 1000ms;
-            
-        }
 
-        &__choix1:hover{
-            
-            
-            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
-            padding-right: 12%;
-            animation: progress-bar 1000ms;
-            
-        }
+        @keyframes bien2 {
+            0%        { width: 100%;
+                border-radius: 0px 10px 10px 0px;
+                      }
+          
 
-
-        @keyframes progress-bar{
-            0% {
-                transform: translateX(10%);
-            }
-            100% {
-                transform: translateX(1%);
-            }
+          
+          
         
-        }
+
+            100%    {
+                width: 100%;
+                border-radius: 0px 0px 0px 0px;
+              }
+          }
 
 
 
-        @keyframes progress-menu{
-            40% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
+          @keyframes bien {
+            0%        { width: 0%;
+                      
+                      }
+          
+
+          
+          
+            50%      {
+                        width: 17%;
+                      }
+
+            100%    {
+                width: 17%;
+                box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
+
+              }
+          }
+
+
+
+
+
+
 
         .main__menu__description{
             
@@ -190,43 +219,27 @@
             text-overflow: ellipsis;
             font-weight: 300;
             font-size: 0.95em;
+            margin-left: 10px;
+            
+            
         }
         
     
 
-        /*
-        @keyframes wheelHueColor {
-    from, to { color: hsl(324, 70%, 45%); }
-    10%      { color: hsl(360, 65%, 45%); }
-    20%      { color: hsl( 36, 80%, 45%); }
-    30%      { color: hsl( 72, 75%, 35%); }
-    40%      { color: hsl(108, 65%, 35%); }
-    50%      { color: hsl(144, 75%, 35%); }
-    60%      { color: hsl(180, 75%, 35%); }
-    70%      { color: hsl(216, 60%, 45%); }
-    80%      { color: hsl(252, 65%, 50%); }
-    90%      { color: hsl(288, 60%, 40%); }
-}
-*/
 
 
 
 
         &__plat{
+            display: inline-block;
             font-weight: 500;
             font-size: 1.1em;
+            margin-left: 10px;
         }
 
 
 
-        .main__menu__super{
-            display: flex;
-            margin-top: +20px;
-          
 
-            
-
-        }
         
 
 
@@ -257,13 +270,14 @@
         content: "\f058";
         font-size: 1.4em;
         position: absolute;
-        right: 11px;
+        right: 18px;
         font-weight: bold;
         color: rgb(255, 255, 255);
-        margin-top: -1px;
+        margin-top: 20px;
+        margin-right: 20px;
        
        
-        animation: rotation 1.4s normal linear;
+        animation: rotationvalidation 1.4s normal linear;
         }
 
 
@@ -272,18 +286,47 @@
 
 
         /*ANIMATION*/
-        @keyframes rotation {
-            80% {
-                transform: rotate(0deg);
-                color: white;
+        @keyframes rotationvalidation {
+            
+            10% {
+                width: 0px;
+                visibility: hidden;
             }
-            100% { 
+
+            40% {
+                visibility: visible;
+                width: 17px;
+                transform: rotate(0deg);
+                
+            }
+
+            70% { 
+                width: 17px;
                 transform: rotate(360deg);
-                color: white;
+            }
+
+            100% { 
+                width: 17px;
+                transform: rotate(360deg);
+               
+                
+                
             }
         }
+
+
+
         
         /*FIN*/
+
+
+
+
+
+
+
+
+
 
 
     
