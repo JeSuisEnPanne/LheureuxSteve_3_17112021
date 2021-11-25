@@ -1,9 +1,7 @@
-body{
-    position: relative;
-}
 
+/*Page Principale*/
 
-.chargement{
+.chargement {
     /*creation du loader*/
     border: 10px solid $colour-tertiaire;
     border-top: 10px solid $colour-secondaire;
@@ -17,17 +15,11 @@ body{
 
 /*placement du loader milieu de la page*/
     position: absolute;
-    
     margin-top: 40%;
 }
 
 
-
-
-
-
-
-.background{
+.background {
 
     display: flex;
     justify-content: center;
@@ -39,14 +31,10 @@ body{
     animation-fill-mode : forwards;
     animation-iteration-count: 1;
     position: absolute;
-
-
 }
 
 
-
-
-.main__villes, p{
+.main__villes, p {
     display: flex;
     font-size: 1.2em;
     font-family: "Roboto";
@@ -55,79 +43,58 @@ body{
 
 
 
-.main__presentation
-{
+.main__presentation {
     
     text-align: center;
     margin-top: 45px;
 
-        &__reserver {
-    
-                
-                
-                margin-top: 20px;
-                
+        &__reserver {      
+            margin-top: 20px;
+        }
 
-            }
-
-            &__reserver, h1 {
-
-
-                font-weight: bold;
-                font-size: 1.4em;
-                
-                
-    
-                        
+        &__reserver, h1 {
+            font-weight: bold;
+            font-size: 1.4em;           
         }
             
     
     
-            &__reserver, h2{
-                
-                font-size: 1em;
-                font-weight: normal;
-                margin-top: 0px;
-                font-weight: 300;
-                letter-spacing: 0.05em;
-                
-    
+        &__reserver, h2 {
+            font-size: 1em;
+            font-weight: normal;
+            margin-top: 0px;
+            font-weight: 300;
+            letter-spacing: 0.05em;
         }
 
 
         &__bouttonexplorer {
-                display: flex; 
-                align-items: center;             
-                background: linear-gradient(143deg, $colour-secondaire 22%, $colour-primaire 77%);
-                border-radius: 25px;
-                width: 59%;
-                height: 50px;
-                justify-content: center;
-                margin-left: 25%;
-                margin-top: 30px;
-                
-                box-shadow: 1px 2px 10px rgba($color: $colour-noir, $alpha: 0.5);
-                        
+            display: flex; 
+            align-items: center;             
+            background: linear-gradient(143deg, $colour-secondaire 22%, $colour-primaire 77%);
+            border-radius: 25px;
+            width: 59%;
+            height: 50px;
+            justify-content: center;
+            margin-left: 25%;
+            margin-top: 30px;
+            box-shadow: 1px 2px 10px rgba($color: $colour-noir, $alpha: 0.5);              
         }
 
         &__bouttonexplorer:hover {
 
             background: linear-gradient(143deg, rgba(255,121,218,0.8043328614774465) 22%, rgba(147,86,220,0.8043328614774465) 77%);
             box-shadow: 1px 2px 10px rgba($color: $colour-noir, $alpha: 1);
-
-                    
-    }
+        }
 
 
 
-        &__bouttonconfig{
+        &__bouttonconfig {
             font-size: 1em;
             font-weight: 500;
             color: $colour-blanc;
             padding-left: 8px;
             padding-right: 8px;
-            
-
         }
 
 
@@ -138,8 +105,7 @@ body{
 /**Fonctionnement*/
 
 
-.main__fonctionnement
-{
+.main__fonctionnement {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -149,22 +115,17 @@ body{
     
 
 
-        &__titre{
+        &__titre {
                 font-size: 0.7em;
                 margin-left: 25px;
                 letter-spacing: 0.1em;
+        }
 
-              
-
-            }
-
-        &__taille{
-
+        &__taille {
             margin-bottom: 40px;
         }
 
         &__un {
-
             display: flex;
             flex-direction: row;
             font-size: 1.3em;
@@ -174,18 +135,17 @@ body{
             border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
             padding-bottom: 40px;
             align-items: center;
-
-            }
+        }
 }
 
-.position__texte{
-    
+/* FIN */
+
+.position__texte {
     margin-left: 30px;
-    
 }
 
 
-.numero{
+.numero {
     background-color: $colour-primaire;
     height: 27px; 
 	width: 27px;
@@ -196,13 +156,14 @@ body{
 
 
 
-        &__choix{
+        &__choix {
             margin-left: 9px;
             margin-top: 5px;
             margin-right: 0px;
-            }
+        }
 }
 
+/* ICONES */
 
 .fa-mobile-alt:before {
     display: flex;
@@ -237,22 +198,19 @@ body{
 
 
 
-.main__restaurants{
+.main__restaurants {
 
- 
 
         &__plats{
-
             display: flex;
             flex-direction: column;
             align-items: center;
             /*animation triche*/
             animation: triche 2s linear;
-            animation-fill-mode : forwards;
-            
+            animation-fill-mode : forwards; 
         }
 
-        &__secteur{
+        &__secteur {
             display: flex;
             width: 88.5%;
             height: auto;
@@ -262,11 +220,6 @@ body{
             border-left: 1px solid rgba(0, 0, 0, 0.1) ;
             border-right: 1px solid rgba(0, 0, 0, 0.1) ;
             margin-left: 5px;
-
-            
-           
-            
-
         }
 
         &__block {
@@ -282,41 +235,36 @@ body{
             line-height: 0.2em;
             font-size: 1em;
             font-weight: 400;
-
         }
 
-
-
-        &__icone{
+        &__icone {
             display: flex;
             align-items: center;
             margin-left: auto;
             margin-right: 30px;
         }
 
-        &__titre, h1{
+        &__titre, h1 {
             font-size: 1.25em;
             margin-left: 3%;
             letter-spacing: 0.05em;
             font-weight: 600;
         }
 
-        &__taille{
+        &__taille {
             margin-left: 0px;
         }
 
-        &__images{
+        &__images {
             width: 99%;
             min-height: 180px;
             max-height: 250px;
             border-radius: 25px 25px 0% 0%;
             height: 10%;
-
             object-fit: cover;
-            
         }
 
-        &__imgliens{
+        &__imgliens {
             display: flex;
             align-content: center;
             justify-content: center;
@@ -330,15 +278,13 @@ body{
             
         }
 
-        &__lien{
+        &__lien {
             color: $colour-noir;
             text-decoration: none;
-            font-size: 1em;
-            
-            
+            font-size: 1em; 
         }
 
-        &__nouveau{
+        &__nouveau {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -349,25 +295,17 @@ body{
             left: 30%;
             top: 45px;
             font-size: 1em;
-            
-           
-           
-
         }
 
-        &__couleur{
+        &__couleur {
             position: absolute;
             color: $couleur-vert;
-            
-            
-
         }
 
 
-        &__corection{
+        &__corection {
             font-size: 1.1em;
-            font-weight: 700;
-            
+            font-weight: 700;  
         }
 
         &__souscorection{
@@ -375,15 +313,15 @@ body{
             font-weight: 300;
             line-height: 10px;
             margin-bottom: 13px;
-
         }
+
 }
 
 /*icone*/
 
+
 .fa-heart:before {
     content: "\f004";
-
     font-size: 1.5em;
     transition: 1s;
 }

@@ -287,10 +287,7 @@ body {
   margin-right: 10px;
 }
 
-body {
-  position: relative;
-}
-
+/*Page Principale*/
 .chargement {
   /*creation du loader*/
   border: 10px solid #99E2D0;
@@ -396,6 +393,7 @@ body {
   align-items: center;
 }
 
+/* FIN */
 .position__texte {
   margin-left: 30px;
 }
@@ -414,6 +412,7 @@ body {
   margin-right: 0px;
 }
 
+/* ICONES */
 .fa-mobile-alt:before {
   display: flex;
   content: "\f3cd";
@@ -633,6 +632,7 @@ a {
 /*FIN*/
 body {
   margin: 0%;
+  position: relative;
 }
 
 /*ANIMATION MENU*/
