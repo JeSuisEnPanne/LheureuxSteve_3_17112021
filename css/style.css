@@ -290,12 +290,12 @@ body {
 /*Page Principale*/
 .chargement {
   /*creation du loader*/
+  width: 100px;
+  height: 100px;
   border: 10px solid #99E2D0;
   border-top: 10px solid #FF79DA;
   border-bottom: 10px solid #9356DC;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
   animation: rotation 2s linear;
   animation-fill-mode: forwards;
   /*placement du loader milieu de la page*/
@@ -306,23 +306,23 @@ body {
 .background {
   display: flex;
   justify-content: center;
-  background-color: currentColor;
-  display: flex;
+  position: absolute;
   width: 100%;
   height: 100%;
+  background-color: currentColor;
   animation: degrader 2s linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  position: absolute;
 }
 
 .main__villes, p {
   display: flex;
   font-size: 1.2em;
-  font-family: "Roboto";
   font-weight: 500;
+  font-family: "Roboto";
 }
 
+/* texte presentation */
 .main__presentation {
   text-align: center;
   margin-top: 45px;
@@ -331,27 +331,27 @@ body {
   margin-top: 20px;
 }
 .main__presentation__reserver, .main__presentation h1 {
-  font-weight: bold;
   font-size: 1.4em;
+  font-weight: bold;
 }
 .main__presentation__reserver, .main__presentation h2 {
   font-size: 1em;
-  font-weight: normal;
-  margin-top: 0px;
   font-weight: 300;
+  font-weight: normal;
   letter-spacing: 0.05em;
+  margin-top: 0px;
 }
 .main__presentation__bouttonexplorer {
   display: flex;
   align-items: center;
-  background: linear-gradient(143deg, #FF79DA 22%, #9356DC 77%);
-  border-radius: 25px;
+  justify-content: center;
   width: 59%;
   height: 50px;
-  justify-content: center;
+  background: linear-gradient(143deg, #FF79DA 22%, #9356DC 77%);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
   margin-left: 25%;
   margin-top: 30px;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
 }
 .main__presentation__bouttonexplorer:hover {
   background: linear-gradient(143deg, rgba(255, 121, 218, 0.8043328615) 22%, rgba(147, 86, 220, 0.8043328615) 77%);
@@ -365,6 +365,7 @@ body {
   padding-right: 8px;
 }
 
+/** FIN **/
 /**Fonctionnement*/
 .main__fonctionnement {
   display: flex;
@@ -375,8 +376,8 @@ body {
 }
 .main__fonctionnement__titre {
   font-size: 0.7em;
-  margin-left: 25px;
   letter-spacing: 0.1em;
+  margin-left: 25px;
 }
 .main__fonctionnement__taille {
   margin-bottom: 40px;
@@ -384,34 +385,36 @@ body {
 .main__fonctionnement__un {
   display: flex;
   flex-direction: row;
+  align-items: center;
   font-size: 1.3em;
   font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   margin-left: 25px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 40px;
-  align-items: center;
 }
 
 /* FIN */
+/** Fonctionnement suite et fin **/
 .position__texte {
   margin-left: 30px;
 }
 
 .numero {
   background-color: #9356DC;
-  height: 27px;
-  width: 27px;
-  border-radius: 50%;
   color: #ffffff;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
   margin-right: 20px;
 }
 .numero__choix {
-  margin-left: 9px;
   margin-top: 5px;
+  margin-left: 9px;
   margin-right: 0px;
 }
 
+/* FIN */
 /* ICONES */
 .fa-mobile-alt:before {
   display: flex;
@@ -446,26 +449,26 @@ body {
   display: flex;
   width: 88.5%;
   height: auto;
-  border-radius: 0% 0% 25px 25px;
+  margin-left: 5px;
   margin-bottom: 20px;
+  border-radius: 0% 0% 25px 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-  margin-left: 5px;
 }
 .main__restaurants__block {
   display: flex;
   flex-direction: column;
-  line-height: 12px;
-  margin-top: 7px;
-  margin-bottom: 10px;
-  margin-left: 5px;
   align-items: flex-start;
   align-content: flex-start;
   justify-content: flex-start;
-  line-height: 0.2em;
   font-size: 1em;
   font-weight: 400;
+  line-height: 12px;
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  line-height: 0.2em;
 }
 .main__restaurants__icone {
   display: flex;
@@ -475,9 +478,9 @@ body {
 }
 .main__restaurants__titre, .main__restaurants h1 {
   font-size: 1.25em;
-  margin-left: 3%;
-  letter-spacing: 0.05em;
   font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-left: 3%;
 }
 .main__restaurants__taille {
   margin-left: 0px;
@@ -486,8 +489,8 @@ body {
   width: 99%;
   min-height: 180px;
   max-height: 250px;
-  border-radius: 25px 25px 0% 0%;
   height: 10%;
+  border-radius: 25px 25px 0% 0%;
   object-fit: cover;
 }
 .main__restaurants__imgliens {
@@ -495,10 +498,10 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
   width: 90%;
   min-height: 180px;
   max-height: 250px;
+  object-fit: cover;
 }
 .main__restaurants__lien {
   color: #000000;
@@ -511,11 +514,11 @@ body {
   justify-content: center;
   min-width: 80px;
   min-height: 30px;
+  font-size: 1em;
   background-color: #99E2D0;
   position: relative;
   left: 30%;
   top: 45px;
-  font-size: 1em;
 }
 .main__restaurants__couleur {
   position: absolute;
@@ -531,6 +534,10 @@ body {
   line-height: 10px;
   margin-bottom: 13px;
 }
+
+/* FIN *-/
+
+
 
 /*icone*/
 .fa-heart:before {
