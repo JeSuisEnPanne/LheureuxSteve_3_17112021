@@ -132,7 +132,6 @@
 .main__menu__rec {
   width: 0%;
   height: 60px;
-  background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
   margin-right: 15px;
 }
@@ -152,12 +151,15 @@
 }
 @keyframes bien {
   0% {
-    width: 0%;
+    width: 50px;
+    background-color: #99E2D0;
   }
   30% {
     width: 17%;
+    background-color: #99E2D0;
   }
   100% {
+    background-color: #99E2D0;
     width: 17%;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
   }
