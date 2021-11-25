@@ -347,7 +347,7 @@ body {
 .main__presentation__bouttonexplorer {
   display: flex;
   align-items: center;
-  background: linear-gradient(143deg, #ff79da 22%, #9356dc 77%);
+  background: linear-gradient(143deg, #FF79DA 22%, #9356DC 77%);
   border-radius: 25px;
   width: 59%;
   height: 50px;
@@ -363,7 +363,7 @@ body {
 .main__presentation__bouttonconfig {
   font-size: 1em;
   font-weight: 500;
-  color: white;
+  color: #ffffff;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -401,11 +401,11 @@ body {
 }
 
 .numero {
-  background-color: #9356dc;
+  background-color: #9356DC;
   height: 27px;
   width: 27px;
   border-radius: 50%;
-  color: white;
+  color: #ffffff;
   margin-right: 20px;
 }
 .numero__choix {
@@ -502,7 +502,7 @@ body {
   max-height: 250px;
 }
 .main__restaurants__lien {
-  color: black;
+  color: #000000;
   text-decoration: none;
   font-size: 1em;
 }
@@ -512,7 +512,7 @@ body {
   justify-content: center;
   min-width: 80px;
   min-height: 30px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   position: relative;
   left: 30%;
   top: 45px;
@@ -618,17 +618,6 @@ a {
   animation-fill-mode: forwards;
 }
 
-@keyframes triche {
-  0% {
-    visibility: hidden;
-  }
-  99% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
 .fa-utensils:before {
   content: "\f2e7";
   font-size: 13px;
@@ -775,5 +764,18 @@ body {
   }
 }
 /*FIN*/
+/* Triche Loader Spiner*/
+@keyframes triche {
+  0% {
+    visibility: hidden;
+  }
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/*    FIN */
 
 /*# sourceMappingURL=style.css.map */
