@@ -758,25 +758,51 @@ body {
 }
 /*    FIN */
 @media screen and (min-width: 768px) {
-  body {
-    background-color: aqua;
+  /*restaurant titre centrer*/
+  .main__restaurants__titre {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
   }
 
   .main__restaurants__images {
-    width: 25%;
+    width: 100%;
     min-height: 180px;
     max-height: 250px;
-    height: 10%;
-    border-radius: 25px 25px 0% 0%;
-    object-fit: cover;
+  }
+
+  .main__restaurants__images2 {
+    width: 360px;
+    max-height: 250px;
+    margin-top: -11px;
   }
 
   .main__restaurants__secteur {
-    width: 22%;
+    display: flex;
+    align-content: center;
+    width: 89%;
+    margin-top: -20px;
+    margin-left: -1px;
+    padding-top: -20px;
+  }
+
+  .main__restaurants__imgliens {
+    margin-top: 0px;
   }
 
   .main__restaurants__nouveau {
     visibility: hidden;
+  }
+
+  .main__restaurants__plats {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .letout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   /*Alignement bouton et presentation*/
