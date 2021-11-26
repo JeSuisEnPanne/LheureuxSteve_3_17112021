@@ -163,31 +163,35 @@
             height: 60px;
             margin-left: 15px;
             margin-top: 20px;
-            
-  
-
 
         }
 
 
 
-        &__rec{
+        &__rectexte:active{
+
+            animation: bien 2s linear ;
+            animation-fill-mode : forwards;
+            
+
+    }
+
+
+
+        &__rec  {
             
             width: 0%;
+            background-color: #99e2d0;
             height: 60px;
             border-radius: 0px 10px 10px 0px;
-            margin-right: 15px;  
+            margin-right: 15px;
+            
                 
         }
 
 
-        &__rec:active{
 
-             animation: bien 2s linear ;
-            animation-fill-mode : forwards;
-
-    }
-
+   
      
 
 
