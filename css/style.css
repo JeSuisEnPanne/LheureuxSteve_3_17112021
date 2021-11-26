@@ -761,6 +761,50 @@ body {
   body {
     background-color: aqua;
   }
+
+  .main__restaurants__images {
+    width: 25%;
+    min-height: 180px;
+    max-height: 250px;
+    height: 10%;
+    border-radius: 25px 25px 0% 0%;
+    object-fit: cover;
+  }
+
+  .main__restaurants__secteur {
+    width: 22%;
+  }
+
+  .main__restaurants__nouveau {
+    visibility: hidden;
+  }
+
+  /*Alignement bouton et presentation*/
+  .main__presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /*Bouton Explorer nos restaurants*/
+  .main__presentation__bouttonexplorer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    background: linear-gradient(143deg, #FF79DA 22%, #9356DC 77%);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    margin: 0px;
+  }
+
+  /*Centrage des fonctionnements*/
+  .main__fonctionnement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .header__logo {
   text-align: center;
