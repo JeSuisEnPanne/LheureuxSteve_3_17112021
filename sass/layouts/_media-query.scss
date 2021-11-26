@@ -9,6 +9,8 @@
     }
 
 
+
+    /*Modification cadre Images*/
     
     .main__restaurants__images {
         width: 99%;
@@ -46,25 +48,20 @@
         
     }
 
-   .main__restaurants__imgliens{
-        margin-top: 0px;
-
-        
-    }
+    /* FIN */
    
 
  
+/*Nouveau*/
 
     .main__restaurants__nouveau{
-        visibility: hidden;
+        top: 70px;
     }
 
     
-    .main__restaurants__plats{
-        display: flex;
-        flex-direction: column;
-        
-    }
+ /*FIN*/
+
+    /*Conteneur restaurant*/
 
   .letout{
       display: flex;
@@ -74,30 +71,26 @@
   }
 
 
-
+/*fin*/
 
     /*Alignement bouton et presentation*/
 
     .main__presentation {
     
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+
     }
 
 
     /*Bouton Explorer nos restaurants*/
 
     .main__presentation__bouttonexplorer {
-        display: flex; 
-        align-items: center; 
-        justify-content: center;   
-        width: 30%;
+
+        width: 240px;
         height: 50px;         
-        background: linear-gradient(143deg, $colour-secondaire 22%, $colour-primaire 77%);
-        box-shadow: 1px 2px 10px rgba($color: $colour-noir, $alpha: 0.5);              
-        border-radius: 25px;
-        margin: 0px;
+        margin-left: 20%;
 
 
 
