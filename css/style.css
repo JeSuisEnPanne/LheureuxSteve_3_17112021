@@ -257,37 +257,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header__logo {
-  text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 1px 4px 0px -1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
-}
-
-#header__logo__image {
-  width: 35%;
-  height: 32%;
-  min-height: 0px;
-  max-height: 80px;
-  margin-bottom: 10px;
-  margin-top: 15px;
-}
-
-.main__villes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Shrikhand";
-  font-weight: bold;
-}
-
-.fa-map-marker-alt:before {
-  display: flex;
-  content: "\f3c5";
-  font-size: 0.8em;
-  margin-right: 10px;
-}
-
 /*Page Principale*/
 .chargement {
   /*creation du loader*/
@@ -788,5 +757,40 @@ body {
   }
 }
 /*    FIN */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: aqua;
+  }
+}
+.header__logo {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 4px 0px -1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+#header__logo__image {
+  width: 35%;
+  height: 32%;
+  min-height: 0px;
+  max-height: 80px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.main__villes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand";
+  font-weight: bold;
+}
+
+.fa-map-marker-alt:before {
+  display: flex;
+  content: "\f3c5";
+  font-size: 0.8em;
+  margin-right: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
