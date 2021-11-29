@@ -168,9 +168,9 @@
 
 
 
-        &__rectexte:active{
+        &__rec:active{
 
-            animation: bien 2s linear ;
+            animation: bien3 2s linear2 ;
             animation-fill-mode : forwards;
             
 
@@ -179,7 +179,7 @@
 
 
         &__rec  {
-            
+        
             width: 0%;
             background-color: #99e2d0;
             height: 60px;

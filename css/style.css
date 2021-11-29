@@ -119,8 +119,8 @@
   margin-left: 15px;
   margin-top: 20px;
 }
-.main__menu__rectexte:active {
-  animation: bien 2s linear;
+.main__menu__rec:active {
+  animation: bien3 2s linear;
   animation-fill-mode: forwards;
 }
 .main__menu__rec {

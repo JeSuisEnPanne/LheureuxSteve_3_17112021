@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Premeire utilisation Scss",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:../css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JeSuisEnPanne/LheureuxSteve_3_11112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeSuisEnPanne/LheureuxSteve_3_11112021/issues"
+  },
+  "homepage": "https://github.com/JeSuisEnPanne/LheureuxSteve_3_11112021#readme"
+}
