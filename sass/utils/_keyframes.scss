@@ -47,8 +47,9 @@
 
 /*   Apparition menu favori vert   */
 
-    @keyframes bien {
+    @keyframes droite__blanc {
         0%  {
+            border-radius: 10px 0px 0px 10px;
             width: 95%;
             
         }
@@ -56,6 +57,7 @@
 
 
         100% {
+            border-radius: 10px 0px 0px 10px;
             
             width: 80%;
         }
@@ -64,54 +66,15 @@
 /*  FIN */
 
 
-/*   Apparition menu favori vert   */
-
-@keyframes bien3 {
-    0%  {
-        width: 0%;
-        
-    }
-
-
-
-    100% {
-        
-        width: 20%;
-    }
-}
-
-/*  FIN */
-
-
-
-
-
-
-/*  Modifications Radius Plats des Menus   */
-
-    @keyframes bien2 {
-        0%  {
-            width: 100%;
-            border-radius: 0px 10px 10px 0px;
-        }
-
-        100% {
-             width: 100%;
-             border-radius: 10px 0px 0px 10px;
-        }
-    }
-
-/*  FIN */    
-
-
 /*  Rotation Image Valider   */
 
 
     @keyframes rotationvalidation {
         
         0% {
-            width: 0px;
-            margin-right: -30px;
+            visibility: visible;
+            width: 10px;
+            margin-right: 0px;
         }
 
         10% {

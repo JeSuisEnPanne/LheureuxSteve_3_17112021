@@ -95,6 +95,12 @@
   align-items: flex-end;
   justify-content: space-between;
   animation: progress-menu1 500ms;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8043328615) 50%, #99e2d0 50%);
+  margin: 0 auto;
+  height: 60px;
+  width: 95%;
+  margin-left: 5px;
+  border-radius: 0px 10px 10px 0px;
 }
 .main__menu__descriptiontop {
   display: flex;
@@ -111,24 +117,27 @@
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-  background-color: white;
-  border-radius: 10px 0px 0px 10px;
+  background-color: #f10000;
+  border-radius: 10px 10px 10px 10px;
   position: relative;
   width: 100%;
   height: 60px;
   margin-left: 15px;
   margin-top: 20px;
 }
-.main__menu__rec:active {
-  animation: bien3 2s linear;
+.main__menu__rec:focus, .main__menu__rectexte {
+  background-color: #ffffff;
+  position: relative;
+}
+.main__menu__rectexte:active {
+  animation: droite__blanc 2s linear;
   animation-fill-mode: forwards;
 }
 .main__menu__rec {
   width: 0%;
-  background-color: #99e2d0;
   height: 60px;
   border-radius: 0px 10px 10px 0px;
-  margin-right: 15px;
+  margin-right: 0px;
 }
 .main__menu .main__menu__description {
   display: inline-block;
@@ -163,17 +172,19 @@
   font-weight: 500;
   font-size: 1.2em;
 }
-.main__menu .fa-check-circle {
+.main__menu .fas {
   content: "\f058";
   font-size: 1.4em;
   position: absolute;
-  right: 18px;
+  right: 28px;
   font-weight: bold;
-  color: white;
+  color: #0fc236;
   margin-top: 20px;
   margin-right: 20px;
+  visibility: visible;
 }
-.main__menu .fa-check-circle:active {
+.main__menu .fas:active {
+  transition-property: steve;
   animation: rotationvalidation 1.4s normal linear;
   animation-fill-mode: forwards;
 }
@@ -644,42 +655,23 @@ body {
 }
 /*  FIN  */
 /*   Apparition menu favori vert   */
-@keyframes bien {
+@keyframes droite__blanc {
   0% {
+    border-radius: 10px 0px 0px 10px;
     width: 95%;
   }
   100% {
-    width: 80%;
-  }
-}
-/*  FIN */
-/*   Apparition menu favori vert   */
-@keyframes bien3 {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 20%;
-  }
-}
-/*  FIN */
-/*  Modifications Radius Plats des Menus   */
-@keyframes bien2 {
-  0% {
-    width: 100%;
-    border-radius: 0px 10px 10px 0px;
-  }
-  100% {
-    width: 100%;
     border-radius: 10px 0px 0px 10px;
+    width: 80%;
   }
 }
 /*  FIN */
 /*  Rotation Image Valider   */
 @keyframes rotationvalidation {
   0% {
-    width: 0px;
-    margin-right: -30px;
+    visibility: visible;
+    width: 10px;
+    margin-right: 0px;
   }
   10% {
     width: 10px;
