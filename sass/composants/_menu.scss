@@ -126,12 +126,15 @@
             align-items: flex-end;
             justify-content: space-between;
             animation: progress-menu1 500ms;
+            
             background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 50%, rgba(153,226,208,1) 50%);
+            
             margin: 0 auto;
             height: 60px;
             width: 95%;
             margin-left: 5px;
             border-radius: 0px 10px 10px 0px;
+            
             
             
             
@@ -174,11 +177,13 @@
             margin-top: 20px;
             
             
+            
+            
                    
 
         }
 
-        &__rec:focus, &__rectexte{
+        &__rec, &__rectexte {
             background-color: #ffffff;
             position: relative;
             
@@ -188,27 +193,46 @@
             
         }
 
-
-        &__rectexte:active{
-            animation: droite__blanc 2s linear ;
-            animation-fill-mode : forwards; 
-            
-     
+        .main__menu__lot{
+        display: flex;
+        margin: 0px;
+        width: 100%;
         }
 
+        .main__menu__lot:active{
+            
+            .main__menu__rectexte{
+                animation: droite__blanc 2s linear  ;
+              
+                animation-timing-function : cubic-bezier(.21,.84,.17,1);
+                animation-fill-mode : forwards;   
+                
+                }
+                
+                .fa-check-circle{
+                    animation: rotationvalidation 1.4s normal linear;
+                    animation-timing-function : cubic-bezier(.25,.72,.33,.84);
 
-       
+            animation-fill-mode : forwards;
+                }
+
+            
+        }
 
 
         &__rec  {
 
-                   
+            display: flex;
+            
+            align-items: center;
+            
             width: 0%;
             
             height: 60px;
             border-radius: 0px 10px 10px 0px;
             margin-right: 0px;
-        
+            margin-top: 10px;
+            
             
                 
         }
@@ -276,26 +300,24 @@
 
        
 
-        .fas {
+        .fa-check-circle {
 
-        content: "\f058";
+        width: 20px;
+        height: 20px;
         font-size: 1.4em;
-        position: absolute;
         right: 28px;
         font-weight: bold;
-        color: rgb(15, 194, 54);
+        color: white;
         margin-top: 20px;
         margin-right: 20px;
-        visibility: visible;
-        }
+        visibility: hidden;
+        
+        
 
-
-        .fas:active{
-        transition-property: steve;
-        animation: rotationvalidation 1.4s normal linear;
-        animation-fill-mode : forwards;
+        
         
         }
+
 
 
 
