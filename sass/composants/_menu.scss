@@ -99,6 +99,8 @@
         &__all{
             display: flex;
             margin-left: 20px;
+            margin-top: 14px;
+            margin-bottom: -16px;
             
 
         }
@@ -110,6 +112,7 @@
             padding-bottom: 5px ;
             font-weight: 300;
             font-size: 1em;
+            
 
 
         }
@@ -121,27 +124,35 @@
 
 
 
-        &__choix1{
+        &__choix{
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            animation: progress-menu1 500ms;
-            
             background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 50%, rgba(153,226,208,1) 50%);
-            
             margin: 0 auto;
             height: 60px;
             width: 95%;
             margin-left: 5px;
             border-radius: 0px 10px 10px 0px;
-            
-            
-            
-            
-
-            
+            margin-top: 15px;
+                        
         }
 
+        .choixAnimation{
+            animation: progress-menu1 500ms;
+        }
+
+        .choixAnimation2{
+            animation: progress-menu2 500ms;
+        }
+
+        .choixAnimation3{
+            animation: progress-menu3 500ms;
+        }
+
+        .choixAnimation4{
+            animation: progress-menu3 500ms;
+        }
 
         
 
@@ -319,66 +330,23 @@
         }
 
 
-
-
-
-
-
-
-
-
-
-        
+     
         /*FIN*/
 
+/*
+        animation: progress-menu2 500ms;
+        */
 
 
 
 
-
-
-
+/*--------------Menu 1.2-------------*/
 
 
 
     
 
 
-        &__choix2{
-            display: flex;
-            margin-left: 20px;
-            align-items: flex-end;
-            justify-content: space-between;
-            box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
-            background-color: rgb(255, 255, 255);
-            border-radius: 10px;
-            margin-right: 5px;
-            position: relative;
-            width: auto;
-            animation: progress-menu2 500ms;
-            margin-bottom: 20px;
-
-            
-        }
-
-
-        &__choix2:active{
-            
-            
-            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
-            padding-right: 12%;
-            animation: progress-bar 1000ms;
-            
-        }
-
-        &__choix2:hover{
-            
-            
-            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
-            padding-right: 12%;
-            animation: progress-bar 1000ms;
-            
-        }
 
         
 
