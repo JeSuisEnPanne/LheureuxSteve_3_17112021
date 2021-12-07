@@ -1,10 +1,14 @@
 @media screen and (min-width: 768px)
 {
 
+
+    
     /*Photo du menu*/
     .main__images{
         height: 500px;
     }
+
+    /*fin*/
 
     /*Titre du menu*/
     .main__titre__menu{
@@ -12,6 +16,8 @@
         text-align: center;
 
     }
+
+    /*fin*/
 
 
     /*Listes des menus*/
@@ -42,6 +48,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+       
         
        
     }

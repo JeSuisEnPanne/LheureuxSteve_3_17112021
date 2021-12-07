@@ -633,11 +633,13 @@ body {
     height: 500px;
   }
 
+  /*fin*/
   /*Titre du menu*/
   .main__titre__menu {
     text-align: center;
   }
 
+  /*fin*/
   /*Listes des menus*/
   .main__menu__letout {
     display: flex;
