@@ -93,7 +93,9 @@
 
 .main__menu{
 
-        
+        &__main{
+            padding: 0px;
+        }
 
         &__all{
             display: flex;
@@ -122,13 +124,12 @@
         }
 
 
-
         &__choix{
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
             background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 50%, rgba(153,226,208,1) 50%);
-            margin: 0 auto;
+            margin: 0px;
             height: 60px;
             width: 95%;
             margin-left: 5px;
@@ -323,6 +324,7 @@
         margin-right: 20px;
         visibility: hidden;
         margin-left: 17px;
+        
         
         
 
