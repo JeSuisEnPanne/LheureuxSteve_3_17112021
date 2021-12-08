@@ -1,203 +1,161 @@
-        /*ANIMATION MENU*/
-        /*--------------*/
-
-
+/*ANIMATION MENU*/
+/*--------------*/
 
 /*  Effet apparition des menus   */
 
-
 /*Premier*/
 
-    @keyframes progress-menu1 {
-        40%  {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+@keyframes progress-menu1 {
+    40% {
+        opacity: 0;
     }
-
-    /*  Second   */
-
-    @keyframes progress-menu2{
-        60%  {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+    100% {
+        opacity: 1;
     }
+}
 
+/*  Second   */
 
-    /*  Troisieme   */
-
-    @keyframes progress-menu3{
-        80%  {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+@keyframes progress-menu2 {
+    60% {
+        opacity: 0;
     }
-
-    @keyframes progress-menu4{
-        90%  {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+    100% {
+        opacity: 1;
     }
+}
 
+/*  Troisieme   */
+
+@keyframes progress-menu3 {
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes progress-menu4 {
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /*  FIN  */
 
-
-
 /*   Apparition menu favori vert   */
 
-    @keyframes droite__blanc {
-        0%  {
-            border-radius: 10px 0px 0px 10px;
-            width: 95%;
-            
-        }
-
-
-
-        100% {
-            border-radius: 10px 0px 0px 10px;
-            
-            width: 80%;
-        }
+@keyframes droite__blanc {
+    0% {
+        border-radius: 10px 0px 0px 10px;
+        width: 95%;
     }
+
+    100% {
+        border-radius: 10px 0px 0px 10px;
+
+        width: 80%;
+    }
+}
 
 /*  FIN */
 
-
 /*  Rotation Image Valider   */
 
-
-    @keyframes rotationvalidation {
-        
-        0% {
-            visibility: hidden;
-            
-            
-        }
-
-        10% {
-            
-            visibility: hidden;
-            
-        }
-
-        20% {
-            
-            visibility: visible;
-            margin-right: 17px;
-            margin-left: 17px;
-            
-        }
-
-        21% {
-            transform: rotate(0deg);
-        }
-
-
-
-        60% { 
-            
-            
-            transform: rotate(360deg);
-            
-        }
-
-        100% { 
-            margin-left: 17px;
-            visibility: visible;
-            transform: rotate(360deg);
-                   
-        }
-
-    
+@keyframes rotationvalidation {
+    0% {
+        visibility: hidden;
     }
 
-    
+    10% {
+        visibility: hidden;
+    }
+
+    20% {
+        visibility: visible;
+        margin-right: 17px;
+        margin-left: 17px;
+    }
+
+    21% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        margin-left: 17px;
+        visibility: visible;
+        transform: rotate(360deg);
+    }
+}
+
 /*  FIN   */
 
-
-
-
-
-        /*  Pages Index   */
-    /*-------------------------*/
-
-
+/*  Pages Index   */
+/*-------------------------*/
 
 /*animation du loader*/
 
-    @keyframes rotation {
-
-        0%  {
-                
-            transform: rotate(0deg);
-            color: hsl(324, 70%, 45%);
-            visibility: visible;
-        }
-
-        99% {
-        
-            color: hsl(324, 70%, 45%);
-        }
-
-        100% {
-             transform: rotate(360deg);
-             visibility: hidden;
-        }
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+        color: hsl(324, 70%, 45%);
+        visibility: visible;
     }
 
-/*FIN*/
+    99% {
+        color: hsl(324, 70%, 45%);
+    }
 
+    100% {
+        transform: rotate(360deg);
+        visibility: hidden;
+    }
+}
+
+/*FIN*/
 
 /*animation du loader degrader*/
 
-
-    @keyframes degrader {
-        0%   { 
-             color: #FF79DA;
-             visibility: visible;
-        }
-    
-        50%  {
-             color: #9356DC;
-        }
-    
-    
-        100% {
-             color: #99E2D0;
-             visibility: hidden;
-        }
+@keyframes degrader {
+    0% {
+        color: #ff79da;
+        visibility: visible;
     }
 
+    50% {
+        color: #9356dc;
+    }
+
+    100% {
+        color: #99e2d0;
+        visibility: hidden;
+    }
+}
 
 /*FIN*/
-
 
 /* Triche Loader Spiner*/
 
 @keyframes triche {
-        0%   { 
-             visibility: hidden;
-        }
-    
-        99%  {
-             visibility: hidden;
-        }
-    
-        100% {
-             visibility: visible;
-        }
+    0% {
+        visibility: hidden;
     }
 
-  /*    FIN */
+    99% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+/*    FIN */

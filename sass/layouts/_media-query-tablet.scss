@@ -1,63 +1,49 @@
-@media screen and (min-width: 768px)
-{
-
-
-    
+@media screen and (min-width: 768px) {
     /*Photo du menu*/
-    .main__images{
+    .main__images {
         height: 500px;
     }
 
     /*fin*/
 
     /*Titre du menu*/
-    .main__titre__menu{
-        
+    .main__titre__menu {
         text-align: center;
-
     }
 
     /*fin*/
 
-
     /*Listes des menus*/
-    .main__menu__letout{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-
-    margin: 0px;
-    padding: 0px;
-    
-    }
-
-    .main__menu__leToutPartie{
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .mmain__menu__leToutPartie2{
+    .main__menu__letout {
         display: flex;
         flex-direction: row;
+        align-content: center;
 
+        margin: 0px;
+        padding: 0px;
+    }
 
-        }
+    .main__menu__leToutPartie {
+        display: flex;
+        flex-direction: column;
+    }
 
-    .main__menu{
+    .mmain__menu__leToutPartie2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__menu {
         display: flex;
         flex-direction: column;
         align-items: center;
-       
-        
-       
     }
 
     /*FIN*/
 
     /*Boutton*/
-    
-    .bouttonexplorer{
+
+    .bouttonexplorer {
         display: flex;
         flex-direction: column;
         margin: 0px;
@@ -70,34 +56,29 @@
 
     /*Animation au survol de la sourie*/
 
-    .main__menu__lot:hover{
-            
-        .main__menu__rectexte{
-            animation: droite__blanc 2s linear  ;
-          
-            animation-timing-function : cubic-bezier(.21,.84,.17,1);
-            animation-fill-mode : forwards;   
-            
-            }
-            
-            .fa-check-circle{
-                animation: rotationvalidation 1.4s normal linear;
-                animation-timing-function : cubic-bezier(.25,.72,.33,.84);
+    .main__menu__lot:hover {
+        .main__menu__rectexte {
+            animation: droite__blanc 2s linear;
 
-        animation-fill-mode : forwards;
-            }
+            animation-timing-function: cubic-bezier(0.21, 0.84, 0.17, 1);
+            animation-fill-mode: forwards;
+        }
 
-        
+        .fa-check-circle {
+            animation: rotationvalidation 1.4s normal linear;
+            animation-timing-function: cubic-bezier(0.25, 0.72, 0.33, 0.84);
+
+            animation-fill-mode: forwards;
+        }
     }
 
     /*FIN*/
 
     /*Pied de page*/
 
-    .footer__textes{
+    .footer__textes {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-
 }

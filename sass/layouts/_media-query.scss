@@ -1,112 +1,83 @@
-@media screen and (min-width: 768px)
-{
-
+@media screen and (min-width: 768px) {
     /*restaurant titre centrer*/
-    .main__restaurants__titre{
+    .main__restaurants__titre {
         display: flex;
         justify-content: center;
         margin: 0px;
     }
 
-
-
     /*Modification cadre Images*/
-    
+
     .main__restaurants__images {
         width: 99%;
-    min-height: 180px;
-    max-height: 250px;
-    height: 10%;
-    border-radius: 25px 25px 0% 0%;
-    object-fit: cover;
-    margin-left: 4px;
-        
+        min-height: 180px;
+        max-height: 250px;
+        height: 10%;
+        border-radius: 25px 25px 0% 0%;
+        object-fit: cover;
+        margin-left: 4px;
     }
 
     .main__restaurants__images2 {
         width: 360px;
         max-height: 250px;
         margin-top: -11px;
-        
     }
 
-
-    .main__restaurants__secteur{
+    .main__restaurants__secteur {
         display: flex;
         align-content: center;
         width: 88.5%;
         margin-top: -23px;
         margin-left: 4px;
-        
-
-        
     }
 
-    .main__restaurants__secteur2{
+    .main__restaurants__secteur2 {
         margin-top: -35px;
-
-        
     }
 
     /* FIN */
-   
 
- 
-/*Nouveau*/
+    /*Nouveau*/
 
-    .main__restaurants__nouveau{
+    .main__restaurants__nouveau {
         top: 70px;
     }
 
-    
- /*FIN*/
+    /*FIN*/
 
     /*Conteneur restaurant*/
 
-  .letout{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-bottom: 50px;
-  }
+    .letout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 
-
-/*fin*/
+    /*fin*/
 
     /*Alignement bouton et presentation*/
 
     .main__presentation {
-    
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
-
 
     /*Bouton Explorer nos restaurants*/
 
     .main__presentation__bouttonexplorer {
-
         width: 240px;
-        height: 50px;         
+        height: 50px;
         margin-left: 20%;
-
-
-
     }
 
     /*Centrage des fonctionnements*/
 
-    .main__fonctionnement{
-        display: flex; 
-        align-items: center; 
-        justify-content: center;  
-        
-        
+    .main__fonctionnement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-
-
-
 }

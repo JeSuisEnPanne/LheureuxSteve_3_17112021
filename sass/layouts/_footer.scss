@@ -5,62 +5,53 @@ footer {
     flex-direction: column;
     background-color: #353535;
     color: white;
-
+    margin-top: 30px;
 }
 
-.footer__textes{
+.footer__textes {
     display: flex;
     flex-direction: column;
     margin: 15px;
 
+    &__proposer {
+        display: flex;
+        align-items: baseline;
+        color: white;
+        font-size: 1.2em;
+    }
 
-        &__proposer{
-            display: flex;
-            align-items: baseline;
-            color: white;
-            font-size: 1.2em;
-        }
+    &__devenir {
+        display: flex;
+        align-items: baseline;
+        color: white;
+        font-size: 1.2em;
+    }
 
-        &__devenir{
-            display: flex;
-            align-items: baseline;
-            color: white;
-            font-size: 1.2em;
-        }
-        
-        &__contact{
-            display: flex;
-            flex-direction: column;
-            color: white;
-            font-size: 1.2em;
-            margin-left: 0px;
-        }
-
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 1.2em;
+        margin-left: 0px;
+    }
 }
 
-a{
-    
-  
-            color: white;
-            font-size: 0.8em;
-            margin-left: 0px;
-            text-decoration: none;
-            font-weight: 500;
-
+a {
+    color: white;
+    font-size: 0.8em;
+    margin-left: 0px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.header__logo__image__basdepage{
+.header__logo__image__basdepage {
     margin-left: 15px;
     margin-top: 15px;
     width: 100px;
     filter: invert(100%);
     animation: triche 2s linear;
-    animation-fill-mode : forwards;
-    
+    animation-fill-mode: forwards;
 }
-
-
-
 
 .fa-utensils:before {
     content: "\f2e7";
@@ -68,13 +59,10 @@ a{
     margin-right: 6px;
 }
 
-
 .fa-hands-helping:before {
     content: "\f4c4";
     font-size: 13px;
     margin-right: 3px;
 }
-
-
 
 /*FIN*/

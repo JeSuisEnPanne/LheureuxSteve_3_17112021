@@ -1,23 +1,19 @@
- 
-.header__logo__menu{
+.header__logo__menu {
     text-align: center;
     margin-bottom: 10px;
     background-color: rgb(255, 255, 255);
     position: relative;
-
 }
 
-#header__logo__image
-    {
-        width: 35%;
-        height: 32%;
-        min-height: 0px;
-        max-height: 80px;
-        margin-bottom: 10px; 
-    }
+#header__logo__image {
+    width: 35%;
+    height: 32%;
+    min-height: 0px;
+    max-height: 80px;
+    margin-bottom: 10px;
+}
 
-
-.header__fleche{
+.header__fleche {
     display: flex;
     position: absolute;
     left: 20px;
@@ -30,42 +26,32 @@
     color: #000000;
 }
 
-
-.main__images{
+.main__images {
     display: flex;
     width: 100%;
     height: 300px;
     object-fit: cover;
     margin-top: -10px;
-    
-
 }
 
-
-.main__titre{
+.main__titre {
     display: flex;
-    
-
-
 }
 
-
-.main__titre__menu{
+.main__titre__menu {
     display: flex;
     margin-top: -30px;
     position: relative;
-   
-
 }
 
-.main__titre__coeur{
+.main__titre__coeur {
     position: absolute;
     right: 1px;
     margin-right: 30px;
     margin-top: -45px;
 }
 
-.main__titre__texte{
+.main__titre__texte {
     width: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 30px 30px 0% 0%;
@@ -74,246 +60,176 @@
     padding-top: 20px;
     margin-top: -10px;
     font-family: "Shrikhand";
-    
-    
-
-
 }
 
 .fa-heart:before {
     content: "\f004";
-
 }
 
 /*FIN*/
 
-
-
 /*Menu Entrées*/
 
-.main__menu{
+.main__menu {
+    &__main {
+        padding: 0px;
+    }
 
-        &__main{
-            padding: 0px;
-        }
+    &__all {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 14px;
+        margin-bottom: -16px;
+    }
 
-        &__all{
-            display: flex;
-            margin-left: 20px;
-            margin-top: 14px;
-            margin-bottom: -16px;
-            
+    &__titre {
+        display: flex;
+        text-decoration: none;
+        border-bottom: 2px solid #99e2d0;
+        padding-bottom: 5px;
+        font-weight: 300;
+        font-size: 1em;
+    }
 
-        }
+    h2 {
+        font-weight: 300;
+        font-size: 1em;
+    }
 
-        &__titre{
-            display: flex;
-            text-decoration : none;
-            border-bottom: 2px solid #99e2d0;
-            padding-bottom: 5px ;
-            font-weight: 300;
-            font-size: 1em;
-            
+    &__choix {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.8043328614774465) 50%, rgba(153, 226, 208, 1) 50%);
+        margin: 0px;
+        height: 60px;
+        width: 95%;
+        margin-left: 5px;
+        border-radius: 0px 10px 10px 0px;
+        margin-top: 15px;
+    }
 
+    .choixAnimation {
+        animation: progress-menu1 500ms;
+    }
 
-        }
+    .choixAnimation2 {
+        animation: progress-menu2 500ms;
+    }
 
-        h2{
-            font-weight: 300;
-            font-size: 1em;
-        }
+    .choixAnimation3 {
+        animation: progress-menu3 500ms;
+    }
 
+    .choixAnimation4 {
+        animation: progress-menu3 500ms;
+    }
 
-        &__choix{
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 50%, rgba(153,226,208,1) 50%);
-            margin: 0px;
-            height: 60px;
-            width: 95%;
-            margin-left: 5px;
-            border-radius: 0px 10px 10px 0px;
-            margin-top: 15px;
-                        
-        }
+    &__descriptiontop {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+    }
 
-        .choixAnimation{
-            animation: progress-menu1 500ms;
-        }
+    .prix {
+        font-size: 0.9em;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
 
-        .choixAnimation2{
-            animation: progress-menu2 500ms;
-        }
+    &__rectexte {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
+        background-color: rgb(241, 0, 0);
+        border-radius: 10px 10px 10px 10px;
+        position: relative;
+        width: 100%;
+        height: 60px;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
 
-        .choixAnimation3{
-            animation: progress-menu3 500ms;
-        }
+    &__rec,
+    &__rectexte {
+        background-color: #ffffff;
+        position: relative;
+    }
 
-        .choixAnimation4{
-            animation: progress-menu3 500ms;
-        }
-
-        
-
-        &__descriptiontop{
-             display: flex;
-             justify-content: space-between;
-             margin-right: 15px;
-           
-            
-
-        }
-        
-        .prix{
-            font-size: 0.9em;
-            margin-top: 0px;
-            margin-bottom: 10px;
-        }
-
-      
-
-        
-        &__rectexte{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
-            background-color: rgb(241, 0, 0);
-            border-radius: 10px 10px 10px 10px;
-            position: relative;
-            width: 100%;
-            height: 60px;
-            margin-left: 15px;
-            margin-top: 20px;
-            
-            
-            
-            
-                   
-
-        }
-
-        &__rec, &__rectexte {
-            background-color: #ffffff;
-            position: relative;
-            
-
-            
-            
-            
-        }
-
-        .main__menu__lot{
+    .main__menu__lot {
         display: flex;
         margin: 0px;
         width: 100%;
+    }
+
+    .main__menu__lot:active {
+        .main__menu__rectexte {
+            animation: droite__blanc 2s linear;
+
+            animation-timing-function: cubic-bezier(0.21, 0.84, 0.17, 1);
+            animation-fill-mode: forwards;
         }
-
-        .main__menu__lot:active{
-            
-            .main__menu__rectexte{
-                animation: droite__blanc 2s linear  ;
-              
-                animation-timing-function : cubic-bezier(.21,.84,.17,1);
-                animation-fill-mode : forwards;   
-                
-                }
-                
-                .fa-check-circle{
-                    animation: rotationvalidation 1.4s normal linear;
-                    animation-timing-function : cubic-bezier(.25,.72,.33,.84);
-
-            animation-fill-mode : forwards;
-                }
-
-            
-        }
-
-
-
-        &__rec  {
-
-            display: flex;
-            
-            align-items: center;
-            
-            width: 0%;
-            
-            height: 60px;
-            border-radius: 0px 10px 10px 0px;
-            margin-right: 0px;
-            margin-top: 10px;
-            
-            
-                
-        }
-
-
-
-
-
-        .main__menu__description{
-            
-            display: inline-block;
-            width: 260px;
-            overflow: hidden;
-            white-space: nowrap;   
-            text-overflow: ellipsis;
-            font-weight: 300;
-            font-size: 0.95em;
-            margin-left: 10px;
-            margin-top: 0px;
-            margin-bottom: 10px;
-            
-            
-        }
-        
-    
-
-
-
-
-
-        &__plat{
-            display: inline-block;
-            font-weight: 500;
-            font-size: 1.1em;
-            margin-left: 10px;
-            margin-top: 8px;
-            margin-bottom: 0px;
-        }
-
-
-
-
-        
-
-
-
-        .main__menu__prix{
-            display: flex;
-            flex-direction: column;
-        
-            justify-content: flex-end;
-            align-items: center;
-            font-weight: bold;
-            margin-right: 8px;
-            width: 20px;
-            height: 40px;
-            border-radius: 0px 7px 7px 0px;
-            font-weight: 500;
-            font-size: 1.2em;
-           
-            
-        }
-
-
-
-       
 
         .fa-check-circle {
+            animation: rotationvalidation 1.4s normal linear;
+            animation-timing-function: cubic-bezier(0.25, 0.72, 0.33, 0.84);
 
+            animation-fill-mode: forwards;
+        }
+    }
+
+    &__rec {
+        display: flex;
+
+        align-items: center;
+
+        width: 0%;
+
+        height: 60px;
+        border-radius: 0px 10px 10px 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    .main__menu__description {
+        display: inline-block;
+        width: 260px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-weight: 300;
+        font-size: 0.95em;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    &__plat {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 1.1em;
+        margin-left: 10px;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+
+    .main__menu__prix {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: bold;
+        margin-right: 8px;
+        width: 20px;
+        height: 40px;
+        border-radius: 0px 7px 7px 0px;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+    .fa-check-circle {
         width: 20px;
         height: 20px;
         font-size: 1.4em;
@@ -324,82 +240,17 @@
         margin-right: 20px;
         visibility: hidden;
         margin-left: -17px;
-        
-        
-        
-
-        
-        
-        }
-
-
-     
-        /*FIN*/
-
-/*
-        animation: progress-menu2 500ms;
-        */
-
-
-
-
-/*--------------Menu 1.2-------------*/
-
-
-
-    
-
-
-
-        
-
-
-
-        &__choix3{
-            display: flex;
-            margin-left: 20px;
-            align-items: flex-end;
-            justify-content: space-between;
-            box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
-            background-color: rgb(255, 255, 255);
-            border-radius: 10px;
-            margin-right: 5px;
-            position: relative;
-            width: auto;
-            animation: progress-menu3 500ms;
-            margin-bottom: 20px;
-
-            
-        }
-
-        &__choix3:active{
-            
-            
-            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
-            padding-right: 12%;
-            animation: progress-bar 1000ms;
-            
-        }
-
-        &__choix3:hover{
-            
-            
-            background: linear-gradient(90deg, rgba(255,255,255,0.8043328614774465) 88%, rgba(153,226,208,1) 88%);           
-            padding-right: 12%;
-            animation: progress-bar 1000ms;
-            
-        }
-
-  
-
     }
+}
 
+/*FIN*/
 
+/*Bouton*/
 
 .bouttonexplorer {
-    display: flex; 
-    align-items: center;             
-    background: linear-gradient(143deg, rgba(255,121,218,1) 22%, rgba(147,86,220,1) 77%);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(143deg, rgba(255, 121, 218, 1) 22%, rgba(147, 86, 220, 1) 77%);
     border-radius: 25px;
     width: 50%;
     height: 50px;
@@ -407,27 +258,25 @@
     margin-left: 25%;
     margin-top: 52px;
     margin-bottom: 82px;
-    
+
     box-shadow: 1px 2px 10px rgba($color: #000000, $alpha: 0.5);
-            
 }
 
 .bouttonexplorer:hover {
-
-    background: linear-gradient(143deg, rgba(255,121,218,0.8043328614774465) 22%, rgba(147,86,220,0.8043328614774465) 77%);
+    background: linear-gradient(
+        143deg,
+        rgba(255, 121, 218, 0.8043328614774465) 22%,
+        rgba(147, 86, 220, 0.8043328614774465) 77%
+    );
     box-shadow: 1px 2px 10px rgba($color: #000000, $alpha: 1);
-
-        
 }
 
-
-
-.bouttonconfig{
-font-size: 0.9em;
-font-weight: bold;
-color: white;
-padding-left: 8px;
-padding-right: 8px;
-
-
+.bouttonconfig {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
 }
+
+/*fin*/
