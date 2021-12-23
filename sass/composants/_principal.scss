@@ -8,6 +8,7 @@
     border-top: 10px solid $colour-secondaire;
     border-bottom: 10px solid $colour-primaire;
     border-radius: 50%;
+    z-index: 31;
 
     animation: rotation 2s linear;
     animation-fill-mode: forwards;
@@ -24,6 +25,7 @@
     width: 100%;
     height: 100%;
     background-color: currentColor;
+    z-index: 30;
 
     animation: degrader 2s linear;
     animation-fill-mode: forwards;
@@ -183,10 +185,6 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        /*animation triche*/
-        animation: triche 2s linear;
-        animation-fill-mode: forwards;
     }
 
     &__secteur {
