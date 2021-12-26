@@ -348,6 +348,7 @@ p {
   margin-bottom: 40px;
 }
 .main__fonctionnement__un {
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
   align-items: center;
