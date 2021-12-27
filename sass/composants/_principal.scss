@@ -119,6 +119,7 @@ p {
 
     &__un {
         background-color: #f6f6f6;
+        border-radius: 25px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -127,7 +128,10 @@ p {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         margin-bottom: 30px;
         margin-left: 25px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
+        padding-top: 22px;
+        
+        
     }
 }
 
